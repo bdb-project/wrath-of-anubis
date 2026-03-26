@@ -1,0 +1,3720 @@
+!% -~S
+!% $OMIT_UNUSED_ROUTINES=1
+!% $ZCODE_COMPACT_GLOBALS=1
+!% $ZCODE_LESS_DICT_DATA=1
+!% $ZCODE_MAX_INLINE_STRING=9999
+!% $MAX_ABBREVS=96
+!========================================
+! The Wrath of Anubis
+! Ken Richards series #1 of 1
+! Copyright © 2025 Garry Francis
+!========================================
+!Constant DEBUG;
+
+Abbreviate "ncient Egyptian";               !     7x16, saved    80
+Abbreviate "archaeologist";                 !     9x13, saved    84
+Abbreviate "sarcophagus";                   !    17x11, saved   141
+Abbreviate "covered in ";                   !    11x11, saved    87
+Abbreviate "You can't ";                    !    45x12, saved   438
+Abbreviate " from the ";                    !    43x10, saved   332
+Abbreviate " something";                    !    22x10, saved   164
+Abbreviate " into the ";                    !    19x10, saved   140
+Abbreviate "crocodiles";                    !    35x10, saved   268
+Abbreviate "medallion";                     !    27x 9, saved   180
+Abbreviate " you can ";                     !    24x 9, saved   159
+Abbreviate " need to ";                     !    22x 9, saved   145
+Abbreviate "There's ";                      !    26x10, saved   196
+Abbreviate "taircase";                      !    16x 8, saved    87
+Abbreviate " of the ";                      !   100x 8, saved   591
+Abbreviate " through";                      !    18x 8, saved    99
+Abbreviate " on the ";                      !    24x 8, saved   135
+Abbreviate " to the ";                      !    83x 8, saved   489
+Abbreviate " in the ";                      !    59x 8, saved   345
+Abbreviate "nothing ";                      !    25x 8, saved   141
+Abbreviate "already ";                      !    35x 8, saved   201
+Abbreviate "El Rajid";                      !    11x10, saved    76
+Abbreviate "pyramid";                       !    18x 7, saved    81
+Abbreviate "orridor";                       !    23x 7, saved   106
+Abbreviate "village";                       !    24x 7, saved   111
+Abbreviate "pharaoh";                       !    19x 7, saved    86
+Abbreviate "You're ";                       !    33x 9, saved   222
+Abbreviate "canteen";                       !    19x 7, saved    86
+Abbreviate " before";                       !    19x 7, saved    86
+Abbreviate "Sinuhe";                        !    27x 7, saved   126
+Abbreviate "debris";                        !    24x 6, saved    90
+Abbreviate " that ";                        !    70x 6, saved   274
+Abbreviate " your ";                        !    70x 6, saved   274
+Abbreviate " from ";                        !    24x 6, saved    90
+Abbreviate ". The ";                        !    30x 8, saved   171
+Abbreviate "snake";                         !    40x 5, saved   114
+Abbreviate "It's ";                         !    75x 7, saved   366
+Abbreviate "north";                         !    23x 5, saved    63
+Abbreviate "round";                         !    21x 5, saved    57
+Abbreviate ", but";                         !    68x 6, saved   266
+Abbreviate " are ";                         !    47x 5, saved   135
+Abbreviate "ould ";                         !    28x 5, saved    78
+Abbreviate "esert";                         !    51x 5, saved   147
+Abbreviate " the ";                         !   380x 5, saved  1134
+Abbreviate " what";                         !    25x 5, saved    69
+Abbreviate " this";                         !    28x 5, saved    78
+Abbreviate "camel";                         !    25x 5, saved    69
+Abbreviate "This ";                         !    25x 6, saved    94
+Abbreviate " and ";                         !   136x 5, saved   402
+Abbreviate " you ";                         !   142x 5, saved   420
+Abbreviate " you'";                         !    41x 6, saved   158
+Abbreviate "water";                         !    29x 5, saved    81
+Abbreviate " was ";                         !    33x 5, saved    93
+Abbreviate " with";                         !    60x 5, saved   174
+Abbreviate " that";                         !    51x 5, saved   147
+Abbreviate "thing";                         !    46x 5, saved   132
+Abbreviate " any";                          !    38x 4, saved    70
+Abbreviate "tion";                          !    79x 4, saved   152
+Abbreviate " is ";                          !    99x 4, saved   192
+Abbreviate "ight";                          !    62x 4, saved   118
+Abbreviate "here";                          !    85x 4, saved   164
+Abbreviate " you";                          !    53x 4, saved   100
+Abbreviate "You ";                          !   136x 5, saved   402
+Abbreviate " to ";                          !   221x 4, saved   436
+Abbreviate "have";                          !    48x 4, saved    90
+Abbreviate "ing ";                          !   116x 4, saved   226
+Abbreviate " of ";                          !   163x 4, saved   320
+Abbreviate "The ";                          !    85x 5, saved   249
+Abbreviate " for";                          !    45x 4, saved    84
+Abbreviate "n't ";                          !    76x 5, saved   222
+Abbreviate "You'";                          !    29x 6, saved   110
+Abbreviate "'s ";                           !    85x 4, saved   164
+Abbreviate "ent";                           !    92x 3, saved    89
+Abbreviate " in";                           !    84x 3, saved    81
+Abbreviate "out";                           !    93x 3, saved    90
+Abbreviate "ead";                           !    64x 3, saved    61
+Abbreviate "ly ";                           !    77x 3, saved    74
+Abbreviate "and";                           !    96x 3, saved    93
+Abbreviate "ed.";                           !    41x 4, saved    76
+Abbreviate "est";                           !    77x 3, saved    74
+Abbreviate "one";                           !    78x 3, saved    75
+Abbreviate "all";                           !    74x 3, saved    71
+Abbreviate " be";                           !    71x 3, saved    68
+Abbreviate ".^^";                           !    24x 6, saved    90
+Abbreviate "ear";                           !    95x 3, saved    92
+Abbreviate "ect";                           !    46x 3, saved    43
+Abbreviate "ver";                           !    90x 3, saved    87
+Abbreviate "ed ";                           !   101x 3, saved    98
+Abbreviate "ing";                           !   150x 3, saved   147
+Abbreviate " it";                           !   125x 3, saved   122
+Abbreviate "the";                           !   111x 3, saved   108
+Abbreviate " a ";                           !   154x 3, saved   151
+Abbreviate ", ";                            !   146x 3, saved   143
+Abbreviate ". ";                            !   202x 3, saved   199
+Abbreviate "s.";                            !    70x 3, saved    67
+Abbreviate "e.";                            !    63x 3, saved    60
+
+Constant Story "The Wrath of Anubis";
+Constant Headline "^Copyright (c) 2025 Garry Francis^https://bdb-project.itch.io^Type ABOUT for further info and credits.^^";
+
+Array UUID_ARRAY string "UUID://a85babca-6d71-4a11-8c88-4e0d129b8834//";
+#Ifdef UUID_ARRAY;
+#Endif;
+
+Release 1;
+Serial "251009";
+
+!Inform 6 constants
+Constant DEATH_MENTION_UNDO;
+Constant MAX_CARRIED = 10;
+Constant NO_SCORE;
+
+!PunyInform constants
+Constant CUSTOM_ABBREVIATIONS;
+Constant OPTIONAL_EXTENDED_METAVERBS;
+Constant OPTIONAL_EXTENDED_VERBSET;
+Constant OPTIONAL_FULL_DIRECTIONS;
+Constant OPTIONAL_PRINT_SCENERY_CONTENTS;
+Constant OPTIONAL_PROVIDE_UNDO;
+Constant RUNTIME_ERRORS 0;!0 for release, 2 for debug
+
+!PunyInform static messages
+Constant MSG_COMMENT_NO_TRANSCRIPT "Comment recorded. Use SCRIPT ON to save future comments in a transcript.^";
+Constant MSG_COMMENT_TRANSCRIPT "Comment recorded.^";
+Constant MSG_FILL_NO_WATER "Fill with what?";
+Constant MSG_PARSER_NO_INPUT "You need to enter a command.";
+Constant MSG_PARSER_UNKNOWN_VERB "That's not a verb I recognise.";
+Constant MSG_SORRY_DEFAULT "Oh, don't apologise.";
+Constant MSG_WAIT_DEFAULT "Time passes...";
+
+!PunyInform dynamic messages
+Constant MSG_CLOSE_NOT_OPEN 1000;
+Constant MSG_LOCK_ALREADY_LOCKED 1001;
+Constant MSG_LOCK_CLOSE_FIRST 1002;
+Constant MSG_LOCK_KEY_DOESNT_FIT 1003;
+Constant MSG_UNLOCK_ALREADY_UNLOCKED 1004;
+Constant MSG_UNLOCK_KEY_DOESNT_FIT 1005;
+
+!Game-specific constants
+Constant AN "an";
+Constant SOME "some";
+Constant THE "the";
+Constant CANT_GET_PAST_DEBRIS "You can't get past all the debris. You'll need to clear it out of the way.";
+Constant CANT_REACH_BECAUSE_OF_SNAKES "You can't reach it because of the snakes.";
+Constant CANT_SHOOT_ANYTHING_WITH "You can't shoot anything with ";
+Constant CANTEEN_IS_EMPTY "The canteen is empty.";
+Constant CUTTING_UP_LIVE_CAMEL_IS_CRUEL "Cutting up the camel while it's still alive would be extremely cruel.";
+Constant DESERT_DESCRIPTION "You're surrounded by an immense sea of sand that extends to the horizon, warmed and illuminated by a relentless sun.";
+Constant DESERT_HINT "If you're lost in the desert, drop an item to make each location look unique and DRAW A MAP!";
+Constant DONT_FIND_ANYTHING_OF_INTEREST ", but don't find anything else of interest.";
+Constant FIND_CANTEEN "Find a canteen.";
+Constant FIRST_OPENING_CANTEEN "(first opening the canteen)^";
+Constant GET_RID_OF_SNAKES_FIRST " You'll have to get rid of the snakes first, or at least clear a path through them.";
+Constant HAVE_TO_TELL_ME_WHAT_TO "You'll have to tell me what to ";
+Constant ITS_BLOCKED_FROM_OTHER_SIDE ", but it's blocked from the other side";
+Constant LID_IS_SEALED_TO_SARCOPHAGUS "You can see that the lid is sealed to the sarcophagus.";
+Constant LOOSE_ENOUGH_TO_MOVE "As you've broken the seal between the lid and the sarcophagus, it's now loose enough to move, but too heavy to move by yourself without any leverage.";
+Constant NO_WATER_HERE "There's no water here.";
+Constant POOR_THING_HAS_BROKEN_LEG "The poor thing has a broken leg and is groaning in agony.";
+Constant QUENCH_YOUR_THIRST "Quench your thirst before returning to the desert.";
+Constant RAISED_80_MM_ABOVE_FLOOR "raised about 80 mm above the floor.";
+Constant REMAINS_OF_ARCHAEOLOGIST " the remains of a poor hapless archaeologist who was less fortunate than yourself.";
+Constant SURROUNDED_BY_CRACK "surrounded by a crack";
+Constant THIRST_HINT "If you're thirsty, find the oasis to the ";
+Constant WELL_NEARBY "There's a well nearby.";
+Constant WITH_KNIFE_LODGED_IN_IT " with a knife lodged in it";
+Constant YOU_CANT_DRINK_FROM "You can't drink from ";
+Constant YOU_DONT_HAVE_FIREARM "You don't have a firearm.";
+Constant YOU_EMPTY_CANTEEN "You empty the canteen and the water soaks into the ground. That was probably a silly thing to do.";
+Constant YOU_FILL_CANTEEN "You fill the canteen with water.";
+Constant YOU_HEAR_RUMBLE_IN_DISTANCE " and you hear a dull rumble in the distance.";
+
+!Replaced actions
+Replace _UpdateDarkness;
+Replace DrinkSub;
+Replace GoSub; !Delete if diagonal directions are used
+Replace LockSub;
+Replace UnlockSub;
+
+Include "globals.h";
+
+!Game-specific variables
+
+!========================================
+! Entry point routines
+!========================================
+[ InScope person i;
+  if (person == player && location == thedark)
+    objectloop(i in parent(player))
+      if (i has moved)
+        PlaceInScope(i);
+  rfalse;
+];
+
+[ LibraryMessages p_msg p_arg_1 p_arg_2;
+  switch (p_msg)
+  {
+    MSG_CLOSE_NOT_OPEN:
+      print_ret (CTheyreOrIts)noun, " already closed.";
+    MSG_LOCK_ALREADY_LOCKED:
+      print_ret (CTheyreOrIts)noun, " already locked.";
+    MSG_LOCK_CLOSE_FIRST:
+      "You'll have to close ", (ItOrThem)noun, " first.";
+    MSG_LOCK_KEY_DOESNT_FIT:
+      print_ret (The)second, " ", (DoesntOrDont)second, " fit the lock.";
+    MSG_UNLOCK_ALREADY_UNLOCKED:
+      print_ret (CTheyreOrIts)noun, " already unlocked.";
+    MSG_UNLOCK_KEY_DOESNT_FIT:
+      print_ret (The)second, " ", (DoesntOrDont)second, " fit the lock.";
+  }
+  p_arg_1 = p_arg_2;
+];
+
+Include "puny.h";
+
+!========================================
+! Initialisation
+!========================================
+[ Initialise;
+  location = room01;
+  lookmode = 2;
+  no_implicit_actions = true;
+  player.description = PlayerDescription;
+  "^After a week of studies and conferences in Cairo and three days of fieldwork in the Valley of the Kings, you considered a visit to the remote village of El Rajid as a pleasant and relaxing diversion. Your former Egyptology teacher, Samuel Rahani, had told you about the village. He considered it to be an archaeological gold mine.^^After befriending a local family, you stayed with them for a few days and learned much about the legends of the village. The one that intrigued you the most was told to you by a boy named Simhel.^^Apparently, a young man named Sinuhe was forced to help in the construction of a fabulous pyramid for the pharaoh. Sinuhe hated the pharaoh because of the suffering he inflicted on him and his co-workers, so he decided to kill the pharaoh.^^During the Festival of the Sun, Sinuhe snuck into the pharaoh's palace to kill him, but he was caught by the palace guards and thrown to the crocodiles. This act enraged Anubis, the ancient Egyptian god of mummification and the afterlife.^^Anubis raised the spirit of Sinuhe and sent him to haunt the pharaoh and his descendants for generations to come. It is said that the spirit still haunts all those who live in the valley around El Rajid, descendants of the pharaoh or not.^^This legend is so rooted in the history of the village that every year, on the Festival of the Sun, the villagers leave their homes to search the remains of the ancient pharaoh's palace, hoping to find the medallion that Sinuhe was wearing when he was killed. According to the legend, if the medallion is melted down and transformed into the figure of Anubis, the wrath of Anubis will be appeased and Sinuhe will have a peaceful afterlife.^^The young Simhel also confided a curious detail to you. According to him, the remains of Sinuhe were not to be found in the ruins of the palace, but inside a pyramid that no one has ever found and was thought to have been consumed by the desert sands.^^When you wake on the morning of the Festival of the Sun, you discover that the villagers have already left to search for the medallion of Sinuhe, leaving you alone to follow the leads that Simhel gave you.^";
+];
+
+!========================================
+! Classes
+!========================================
+Class OpenableContainer
+with
+  invent
+  [;
+    if (inventory_stage == 2 && (self hasnt open || child(self) == 0))
+      rtrue;
+  ],
+has container openable;
+
+Class OpenContainer
+with
+  invent
+  [;
+    if (inventory_stage == 2 && child(self) == 0)
+      rtrue;
+  ],
+has container open;
+
+Class Surface
+with
+  invent
+  [;
+    if (inventory_stage == 2 && child(self) == 0)
+      rtrue;
+  ],
+has supporter;
+
+!========================================
+! Room 1: Small Building
+!========================================
+Object room01 "Small Building"
+with
+  description "This narrow building is where you've been staying for the past few days. It could best be described as a combination of a kitchen and a bedroom with very modest furnishings. The building only has one exit to the south. As it's the Festival of the Sun, the family that owns it has gone to look for the medallion of Sinuhe.",
+  s_to room02,
+  out_to room02,
+  before
+  [;
+    Hint:
+      if (chisel in nothing)
+        "Examine the table.";
+  ],
+has light;
+
+!----------------------------------------
+! Building (floating object)
+!----------------------------------------
+Object "building"
+with
+  name 'building' 'house' 'narrow' 'small' 'kitchen' 'bedroom' 'room',
+  description "This building is the house where you've been living during your short stay in El Rajid.",
+  before
+  [;
+    Enter:
+      if (self in room02)
+        <<Go FAKE_N_OBJ>>;
+    Exit:
+      if (self in room01)
+        <<Go FAKE_S_OBJ>>;
+  ],
+  found_in room01 room02,
+has scenery;
+
+!----------------------------------------
+! Furnishings
+!----------------------------------------
+Object "furnishings" room01
+with
+  name 'furniture' 'furnishings' 'modest' 'bed',
+  description "None of the furnishings here are worth worrying about, except maybe the table.",
+has pluralname scenery;
+
+!----------------------------------------
+! Table
+!----------------------------------------
+Object table "table" room01
+class Surface
+with
+  name 'old' 'dark' 'wooden' 'table',
+  description
+  [;
+    print "It's an old dark wooden table used mainly for food preparation. ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Search:
+      if (chisel in nothing)
+        move chisel to self;
+  ],
+has static supporter;
+
+!----------------------------------------
+! Chisel
+!----------------------------------------
+Object chisel "chisel"
+with
+  name 'chisel',
+  description "It's a specialised tool used for removing layers of earth and rock to uncover artifacts and lifting fragile objects.",
+has;
+
+!========================================
+! Room 2: Village of El Rajid
+!========================================
+Object room02 "Village of El Rajid"
+with
+  description "You're on the road that passes through the small village of El Rajid. It heads east towards the ruins and south towards the desert. A small building to the north is the house of the family where you've been staying.",
+  n_to room01,
+  s_to room05,
+  e_to room03,
+  in_to room01,
+has light;
+
+!----------------------------------------
+! Road
+!----------------------------------------
+Object "road" room02
+with
+  name 'road' 'packed' 'earth',
+  description "It's a packed earth road that heads east to the palace ruins and south to the desert.",
+has scenery;
+
+!----------------------------------------
+! Village of El Rajid
+!----------------------------------------
+Object "village" room02
+with
+  name 'small' 'village' 'of' 'el' 'rajid',
+  description "This is the village of El Rajid. It's hot and dry and dotted with mud-brick dwellings. It's unusually quiet at the moment, as the inhabitants have gone off to look for the medallion of Sinuhe in the palace ruins.",
+has scenery;
+
+!----------------------------------------
+! Palace ruins (floating object)
+!----------------------------------------
+Object "ruins"
+with
+  name 'palace' 'ruins',
+  description "The palace ruins are to the east, but you can't see them from here.",
+  found_in room02 room03,
+has pluralname scenery;
+
+!----------------------------------------
+! Desert (floating object)
+!----------------------------------------
+Object "desert"
+with
+  name 'desert',
+  description "The desert is to the south.",
+  found_in room02 room05,
+has scenery;
+
+!----------------------------------------
+! Sun (floating object)
+!----------------------------------------
+Object "sun"
+with
+  article THE,
+  name 'sun' 'sunlight',
+  description "Don't look at the sun or it will blind you.",
+  before
+  [;
+    if (action ~= ##Examine)
+      "The sun is too far away.";
+  ],
+  found_in
+  [;
+    if (location has light && location ~= room01 or room10 or room22)
+      rtrue;
+  ],
+has scenery;
+
+!----------------------------------------
+! Dwellings
+!----------------------------------------
+Object "dwellings" room02
+with
+  name 'mud-brick' 'mud' 'brick' 'dwellings' 'white' 'buildings',
+  description "The only dwelling of interest to you is the small building to the north, as this is the one where you've been staying for your short visit to El Rajid.",
+has pluralname scenery;
+
+!========================================
+! Room 3: Road to Ruins
+!========================================
+Object room03 "Road to Ruins"
+with
+  description "You're on the road that leads east to the ruins of the palace where the villagers are looking for the medallion of Sinuhe. The centre of El Rajid is to the west and your Jeep is parked on the side of the road.",
+  e_to
+  [;
+    print_ret (The)man, " says, ~Strangers aren't allowed to enter the ruins.~";
+  ],
+  w_to room02,
+  in_to room04,
+  before
+  [;
+    Hint:
+      if (room04 hasnt visited)
+        "Make sure you have a look in your Jeep.";
+      "Talk to ", (the)man, " and ask him about everything you've learnt and anything he mentions. He's a mine of information.";
+  ],
+has light;
+
+!----------------------------------------
+! Road
+!----------------------------------------
+Object "road" room03
+with
+  name 'road',
+  description "It's the road from El Rajid to the palace ruins.",
+has scenery;
+
+!----------------------------------------
+! Jeep (floating object)
+!----------------------------------------
+Object "Jeep"
+with
+  article "your",
+  name 'willys' 'mb' 'jeep' 'vehicle',
+  description "It's a World War II vintage Willys MB Jeep. You hired it from a seedy-looking character in Cairo.",
+  before
+  [;
+    Drive, SwitchOn:
+      if (self in room03)
+        "You'll need to get in the Jeep first.";
+      else
+        "You've only got enough fuel to return to Cairo and you need to finish your mission here before you can do that.";
+    Enter:
+      if (self in room03)
+        <<Go FAKE_IN_OBJ>>;
+    Exit:
+      if (self in room04)
+        <<Go FAKE_OUT_OBJ>>;
+  ],
+  found_in room03 room04,
+has scenery;
+
+!----------------------------------------
+! Big burly man
+!----------------------------------------
+Object man "big burly man" room03
+with
+  name 'big' 'burly' 'hairy' 'man' 'achmed',
+  short_name
+  [;
+    if (self has proper)
+    {
+      print "Achmed";
+      rtrue;
+    }
+    rfalse;
+  ],
+  description "He's a big man, very hairy, and not someone to mess with.",
+  life
+  [;
+    Ask:
+      wn = consult_from;
+      switch (NextWord())
+      {
+        'achmed':
+          "~That's me.~";
+        'anubis':
+          "~Anubis is the god of the afterlife and the dead. He's commonly depicted as a man with a jackal's head. Anubis also judges the deceased. When he judged the good soul of Sinuhe, he was furious that he had been fed to the crocodiles and not given a proper burial. Or so the legend goes.~";
+        'arab', 'arabs', 'bedouin', 'nomad', 'nomads':
+          "~There are many nomads in the desert. Most of them are Bedouin Arabs. In fact, some of the people in the village are also Bedouin Arabs, but they are no longer nomadic.~";
+        'camel', 'camels':
+          "~Camels are known as 'the ships of the desert' because they are the only means of transport in the desert. They're also an important source of meat.~";
+        'crocodile', 'crocodiles':
+          "~There are no crocodiles in the desert, but there were Nile crocodiles in the days of the pharaohs, before the Nile changed its course further to the east.~";
+        'custom', 'customs', 'local', 'tradition', 'traditions':
+          "~We have many customs. Today is the Festival of the Sun, where we celebrate Ra, but it's also the one day of the year where we search the ruins of the former pharaoh's palace in search of Sinuhe's medallion.~";
+        'desert':
+          "~If you want desert, we have plenty of desert. Once you leave the village, there's nothing but desert for miles and miles. Oh, apart from the oasis.~";
+        'el', 'rajid', 'village':
+          "~El Rajid is our village, but you know that already, as you've been staying with us for the past few days.~";
+        'festival', 'sun', 'summer', 'solstice':
+          "~The Festival of the Sun is held on the day of the summer solstice. It's a local tradition that's been held for thousands of years to celebrate Ra.~";
+        'ghost', 'soul', 'spirit':
+          "~The ghost of Sinuhe was meant to haunt the descendents of the pharaoh, but I guess ghosts aren't very choosy, so it just haunts anyone in the village at random.~";
+        'god', 'gods':
+          "~There are many gods. Which one would you like to know about?~";
+        'him', 'himself':
+          give self proper;
+          "~My name is Achmed.~";
+        'legend', 'legends':
+          "~Which legend? We have many legends, but the one we're celebrating today is the legend of Sinuhe and his lost medallion.~";
+        'me', 'myself', 'self', 'ken', 'richards':
+          "~I know only that you are an archaeologist and a visitor to our village. You are most welcome. We ask only that you honour our customs.~";
+        'medallion', 'medal':
+          "~It is said that Sinuhe was wearing a medallion when he was fed to the crocodiles. If that medallion can be found, it can be melted down and made into a statuette of Anubis to appease his wrath. Only then will Sinuhe's ghost stop haunting us.~";
+        'nile', 'river':
+          "~The Nile River is the nearest river to here, but it's many miles away to the east.~";
+        'oasis', 'oases', 'water':
+          "~There's an oasis in the desert to the west. We get our water from there.~";
+        'palace', 'ruins':
+          "~This was the palace of the pharaoh at the time when Sinuhe was fed to the crocodiles.~";
+        'pharaoh':
+          "~Which pharaoh? There were many pharaohs, but the one who lived in this palace was said to be a cruel tyrant. You can understand why Sinuhe tried to kill him.~";
+        'pyramid':
+          "~It is said that the pharaoh's pyramid sunk in the desert. It's never been found.~";
+        'ra':
+          "~Ra is the god of sun, light and creation. He travels across the sky during the day and descends into the underworld at night. He's depicted in ancient Egyptian paintings as a human with a falcon's head and a solar disk above his head.~";
+        'simhel':
+          "~Simhel? I don't know any Simhel. Oh, wait, do you mean that mischievous boy in the village? He has a vivid imagination. Don't believe anything he tells you.~";
+        'sinuhe':
+          "~Sinuhe was the one who tried to kill the pharaoh back in the day when the pharaoh's pyramid was being built, but he was caught and fed to the crocodiles and his ghost still haunts the village.~";
+        'sobek':
+          "~Sobek is the god of fertility and military prowess. He's often associated with the Nile River and its crocodiles, so he's usually depicted as a human with the head of a crocodile.~";
+        'tyrant':
+          "~The pharaoh who lived in this palace was said to be a cruel tyrant, but no one remembers his name. It's more likely that no one WANTS to remember his name.~";
+        default:
+          "~I don't have time to answer questions. I need to help the others with the search.~";
+      }
+    Attack:
+      print_ret (The)self, " is much bigger than you, so don't get any funny ideas.";
+    Talk:
+      "Despite his appearance, ", (the)self, " seems quite friendly. ~You're welcome to stay in our village, but this is the one day of the year when the locals search for the medallion of Sinuhe. The ruins are dangerous, so strangers aren't allowed to enter. It's for your own safety. I'm sure you understand.~";
+    Thank:
+      print_ret (The)self, " says, ~You're welcome.~";
+  ],
+has animate;
+
+!========================================
+! Room 4: In Your Jeep
+!========================================
+Object room04 "In Your Jeep"
+with
+  description "You're sitting in your Jeep. There's a thick layer of dust covering the interior of the vehicle, but you reckon the dust gives it character. When you've got everything you need, just get out of the Jeep.",
+  out_to room03,
+  before
+  [;
+    Hint:
+      if (checklist in nothing)
+        "Open the book.";
+      if (checklist hasnt general)
+        "Read the checklist.";
+      "Make sure you collect everything on the checklist before venturing into any unknown ruins.";
+  ],
+has light;
+
+!----------------------------------------
+! Dust
+!----------------------------------------
+Object "dust" room04
+with
+  article SOME,
+  name 'dust' 'thick' 'layer' 'of' 'interior',
+  description "Everything out here is dusty, the interior of the Jeep is no exception.",
+has scenery;
+
+!----------------------------------------
+! Flashlight
+!----------------------------------------
+Object flashlight "flashlight" room04
+with
+  name 'flashlight' 'torch' 'ex-military',
+  short_name
+  [;
+    if (self has light)
+      print "lit ";
+    rfalse;
+  ],
+  invent
+  [;
+    if (inventory_stage == 2)
+      rtrue;
+  ],
+  description
+  [;
+    print "It's an ex-military flashlight that you picked up in an army disposal store in Cairo. It's currently turned ";
+    if (self has light)
+      "on.";
+    else
+      "off.";
+  ],
+  before
+  [;
+    Burn, SwitchOn:
+      if (self has light)
+        "It's already on.";
+      give self light;
+      "You turn the flashlight on.";
+    Extinguish, SwitchOff:
+      if (self hasnt light)
+        "It's already off.";
+      give self ~light;
+      "You turn the flashlight off.";
+  ],
+has;
+
+!----------------------------------------
+! Book
+!----------------------------------------
+Object book "book" room04
+with
+  name 'book' 'volume',
+  description
+  [;
+    print "It's a volume on the translation of ancient Egyptian symbols and writing.";
+    if (self hasnt general)
+      print " Maybe you should read it to refresh your memory.";
+    "";
+  ],
+  before
+  [;
+    Close:
+      "It's already closed.";
+    Open, Read:
+      give self general;
+      if (checklist notin nothing)
+        "You open the book and flick through the pages to refresh your memory, but there's too much to take it all in, so you close it up again.";
+      move checklist to location;
+      "When you open the book to read it, something falls out.";
+  ],
+has;
+
+!----------------------------------------
+! Checklist
+!----------------------------------------
+Object checklist "checklist"
+with
+  name 'checklist' 'list',
+  description
+  [;
+    print "It's a tattered checklist that you always carry with you as a reminder of the essentials you'll need before venturing into unexplored territory.";
+    if (self hasnt general)
+      print " It wouldn't hurt to read it, just to refresh your memory.";
+    "";
+  ],
+  before
+  [;
+    Read:
+      give self general;
+      "It reads,^'My checklist:^- Light source^- Firearm (just in case)^- Chisel^- Knife^- Rations'";
+  ],
+has;
+
+!----------------------------------------
+! Pistol
+!----------------------------------------
+Object pistol "pistol" room04
+with
+  name 'pistol' 'colt' 'm1911a1' 'semi-automatic' 'gun' 'firearm',
+  description "It's a World War II issue Colt M1911A1 semi-automatic pistol that you picked up in an army disposal store in Cairo.",
+has;
+
+!========================================
+! Room 5: Road from Village to Desert
+!========================================
+Object room05 "Road from Village to Desert"
+with
+  description "You're now on the road that leads from the village to the desert and vice versa. You know that the security of the low white buildings of the village are in the distance to the north, but they're now out of sight, whereas the harsh yellow dunes of the desert are in the opposite direction to the south.",
+  n_to room02,
+  s_to
+  [;
+    if (player hasnt general)
+    {
+      desert.time_left = 20;
+      StartDaemon(desert);
+    }
+    return room06;
+  ],
+  before
+  [;
+    Hint:
+      if (chisel hasnt moved || flashlight hasnt moved || pistol hasnt moved)
+        "Make sure you search the village and collect useful objects before venturing into the desert.";
+  ],
+has light;
+
+!----------------------------------------
+! Road
+!----------------------------------------
+Object "road" room05
+with
+  name 'road' 'dry' 'packed' 'soft' 'harsh' 'yellow' 'sand' 'dunes',
+  description "The dry packed sand of the road gives way to the soft sand of the dunes to the south.",
+has scenery;
+
+!========================================
+! Room 6: Desert
+!========================================
+Object room06 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to
+  [;
+    if (player hasnt general)
+      StopDaemon(desert);
+    return room05;
+  ],
+  s_to room14,
+  e_to room16,
+  w_to room07,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "west.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!----------------------------------------
+! Desert (floating object)
+!----------------------------------------
+Object desert "desert"
+with
+  article THE,
+  name 'desert' 'sea' 'of' 'sand' 'dune' 'dunes' 'horizon',
+  description "It's a harsh and unrelenting desert.",
+  before
+  [;
+    Dig:
+      "You try digging a hole with your hands, but the dry desert sand just falls back in on itself.";
+  ],
+  daemon
+  [;
+    self.time_left--;
+    if (self.time_left > 10)
+      rtrue;
+    if (self.time_left > 4)
+      "^You're starting to get thirsty. You won't get very far without water.";
+    switch (self.time_left)
+    {
+      4: "^The desert sun beats down hard and the heat makes your journey more and more tiring.";
+      3: "^Your throat is completely dry and your tongue sticks to the roof of your mouth.";
+      2: "^A veil begins to fall over your eyes and you feel the blood pulsing in your temples.";
+      1: "^You don't even have the strength to scream. If you don't drink some water NOW, you'll pass out in the desert heat.";
+      0: deadflag = 1;
+         "^The heat overwhelms you. Your thoughts become a confused tumult, darkness falls over your eyes and you collapse unconscious on the burning sand.";
+    }
+  ],
+  time_left 0,
+  found_in room06 room07 room12 room13 room14 room15 room16 room17 room18 room19 room20 room21,
+has scenery;
+
+!========================================
+! Room 7: Desert
+!========================================
+Object room07 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to
+  [;
+    if (player hasnt general)
+      StopDaemon(desert);
+    return room08;
+  ],
+  s_to room13,
+  e_to room06,
+  w_to room12,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "north.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!========================================
+! Room 8: Small Oasis
+!========================================
+Object room08 "Small Oasis"
+with
+  description "This small oasis is a paradise of peace and tranquility, a true respite from the desert heat. An expanse of rich vegetation opens to the north and west, while the harsh desert awaits your return to the south.",
+  n_to room09,
+  s_to
+  [;
+    if (player hasnt general)
+    {
+      desert.time_left = 20;
+      StartDaemon(desert);
+    }
+    return room07;
+  ],
+  w_to room11,
+  before
+  [;
+    Hint:
+      if (player hasnt general && room11 hasnt visited)
+        print_ret (string)WELL_NEARBY;
+      if (canteen in nothing)
+        print_ret (string)FIND_CANTEEN;
+      if (player hasnt general)
+        print_ret (string)QUENCH_YOUR_THIRST;
+  ],
+has light;
+
+!----------------------------------------
+! Oasis (floating object)
+!----------------------------------------
+Object "oasis"
+with
+  article AN,
+  name 'small' 'oasis',
+  description "The oasis is a cool change from the heat of the desert, as it's shaded by date palms.",
+  found_in room08 room09 room11,
+has scenery;
+
+!----------------------------------------
+! Vegetation (floating object)
+!----------------------------------------
+Object "vegetation"
+with
+  article SOME,
+  name 'vegetation' 'long' 'grass' 'grasses' 'low' 'bush' 'bushes' 'cluster' 'clusters' 'of' 'date' 'dates' 'palm' 'palms' 'tree' 'trees',
+  description "The vegetation of the oasis consists of long grasses and low bushes growing beneath clusters of date palms.",
+  before
+  [;
+    Climb, Search:
+      "This is not the time or the place to start exploring the vegetation or climbing the trees.";
+  ],
+  found_in room08 room09 room11,
+has scenery;
+
+!----------------------------------------
+! Desert (floating object)
+!----------------------------------------
+Object "desert"
+with
+  article THE,
+  name 'desert' 'sand',
+  description
+  [;
+    print "The desert sands await you to the ";
+    if (self in room11)
+      "east.";
+    else
+      "south.";
+  ],
+  found_in room08 room09 room11,
+has scenery;
+
+!========================================
+! Room 9: Outside Tent in Oasis
+!========================================
+Object room09 "Outside Tent in Oasis"
+with
+  description "You're outside a tent in the oasis. Someone clearly thought that this was a good place to camp. If you're not mistaken, you can hear snoring coming from inside the tent, which is to the north. To the south, the rich vegetation of the oasis meets the sand of the desert.",
+  n_to room10,
+  s_to room08,
+  in_to room10,
+  before
+  [;
+    Hint:
+      if (player hasnt general && room11 hasnt visited)
+        print_ret (string)WELL_NEARBY;
+      if (canteen in nothing)
+        print_ret (string)FIND_CANTEEN;
+      if (player hasnt general)
+        print_ret (string)QUENCH_YOUR_THIRST;
+    Listen:
+      print "You can hear snoring coming from inside the tent.";
+      if (room10 hasnt visited)
+        print " Either that, or there's a wild animal in there.";
+      "";
+  ],
+has light;
+
+!----------------------------------------
+! Tent (floating object)
+!----------------------------------------
+Object "tent"
+with
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'tent' or 'traditional' or 'bedouin' or 'entrance' or 'bayt' or 'al-sha^r' or 'house' or 'of' or 'hair' or 'strips' or 'black' or 'goat')
+    {
+      i++;
+      if (nw == 'bedouin' && TestScope(nomad))
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description "It's a traditional Bedouin tent, or bayt al-sha'r (meaning 'house of hair'). It appears to be made from strips of black goat hair woven into a fabric. This provides good insulation in the heat of the desert.",
+  before
+  [;
+    Enter:
+      if (self in room09)
+        <<Go FAKE_N_OBJ>>;
+    Exit:
+      if (self in room10)
+        <<Go FAKE_S_OBJ>>;
+  ],
+  found_in room09 room10,
+has scenery;
+
+!========================================
+! Room 10: Inside Large Tent
+!========================================
+Object room10 "Inside Large Tent"
+with
+  description "You're inside a large tent where a nomad sleeps, sheltered from the heat and insects outside. The gloom of the tent is broken by a sliver of light that shines in through the entrance of the tent to the south.",
+  s_to room09,
+  out_to room09,
+  before
+  [;
+    Hint:
+      if (canteen in nothing)
+        "Examine the nomad and do what is suggested.";
+      if (player hasnt general && room11 hasnt visited)
+        print_ret (string)WELL_NEARBY;
+      if (player hasnt general)
+        print_ret (string)QUENCH_YOUR_THIRST;
+    Listen:
+      "You can hear the nomad's snoring. Don't disturb him.";
+  ],
+has light;
+
+!----------------------------------------
+! Nomad
+!----------------------------------------
+Object nomad "nomad" room10
+with
+  name 'nomad' 'bedouin' 'arab' 'elderly' 'old' 'man',
+  description
+  [;
+    print "He's an elderly man, most likely a Bedouin arab, dressed in a long flowing robe that insulates him from the heat. ";
+    if (canteen in nothing)
+      "While he's asleep, it might be a good idea to search him to make sure he doesn't have any concealed weapons.";
+    print "You've already searched him, so let him rest in peace";
+    if (canteen has moved)
+      print ", lest he discovers that you've stolen his canteen";
+    ".";
+  ],
+  life
+  [;
+    print "The nomad ";
+    if (action == ##Attack or ##ThrowAt)
+      "has done nothing to harm you, so leave him alone.";
+    else
+      "is asleep. Let him rest.";
+  ],
+  before
+  [;
+    Search:
+      print "You carefully frisk the old man";
+      if (canteen notin nothing)
+        print_ret (string)DONT_FIND_ANYTHING_OF_INTEREST;
+      move canteen to location;
+      " and find a canteen.";
+  ],
+has animate;
+
+!----------------------------------------
+! Robe
+!----------------------------------------
+Object "robe" room10
+with
+  name 'long' 'flowing' 'robe' 'thobe' 'full-length' 'gown' 'clothes' 'clothing',
+  description "It's a full-length gown, called a thobe, made from the wool of sheep, goats or camels.",
+  before
+  [;
+    Take:
+      "If you try to take the man's clothes, he's sure to wake up and then you'll have to deal with a mad Arab. No, it's best to leave him alone.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Canteen
+!----------------------------------------
+Object canteen "canteen"
+class OpenableContainer
+with
+  name 'canteen' 'modern' 'tin' 'leather' 'cover',
+  description
+  [;
+    print "The Bedouin traditionally used a waterskin made of sheep or goat skin to hold water, but this is a modern tin canteen with a leather cover to help keep the water cool. ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Drink:
+      "You can drink water or drink from the canteen, but you can't drink the canteen itself. That wouldn't fit down your throat.";
+    DrinkFrom:
+      if (self hasnt open)
+      {
+        print (string)FIRST_OPENING_CANTEEN;
+        give canteen open;
+      }
+      if (water notin self)
+        print_ret (string)CANTEEN_IS_EMPTY;
+      <<Drink water>>;
+    Empty:
+      if (self hasnt open)
+      {
+        print (string)FIRST_OPENING_CANTEEN;
+        give canteen open;
+      }
+      if (water notin self)
+        print_ret (string)CANTEEN_IS_EMPTY;
+      remove water;
+      print_ret (string)YOU_EMPTY_CANTEEN;
+    Fill:
+      if (bulk_water in location)
+      {
+        print "(with water)^";
+        second = bulk_water;
+      }
+      <<FillWith self second>>;
+    FillWith:
+      if (self hasnt open)
+      {
+        print (string)FIRST_OPENING_CANTEEN;
+        give canteen open;
+      }
+      if (water in self)
+        "It's already full.";
+      if (second == nothing)
+        print_ret (string)NO_WATER_HERE;
+      if (second ~= bulk_water)
+        "You can't fill the canteen with ", (ThatOrThose)second, ".";
+      if (second notin location)
+        print_ret (string)NO_WATER_HERE;
+      move water to self;
+      print_ret (string)YOU_FILL_CANTEEN;
+    Receive:
+      if (noun ~= bulk_water)
+        "The only thing you can put in the canteen is water.";
+  ],
+has container openable;
+
+!========================================
+! Room 11: Well in Oasis
+!========================================
+Object room11 "Well in Oasis"
+with
+  description "You're standing by a small well surrounded by the vegetation of an oasis. The vegetation thins out to the east to make way for the desert.",
+  e_to room08,
+  before
+  [;
+    Hint:
+      if (canteen in nothing)
+        print_ret (string)FIND_CANTEEN;
+      if (player hasnt general && water notin canteen)
+        "Fill the canteen.";
+      if (player hasnt general)
+        print_ret (string)QUENCH_YOUR_THIRST;
+  ],
+has light;
+
+!----------------------------------------
+! Well
+!----------------------------------------
+Object well "well" room11
+with
+  name 'small' 'well' 'circle' 'of' 'stones',
+  description "The well consists of a circle of stones that appear to have been carefully laid to contain a natural spring. When you look into the well, you can see sparkling clear water that's just an arm's reach away.",
+  before
+  [;
+    Search:
+      <<Examine self>>;
+  ],
+has scenery;
+
+!----------------------------------------
+! Bulk water
+!----------------------------------------
+Object bulk_water "water" room11
+with
+  article SOME,
+  name 'water' 'sparkling' 'clear' 'natural' 'spring',
+  description "The sparkling clear spring water glistens in the sun.",
+  before
+  [;
+    Drink:
+      if (second ~= nothing && second ~= well)
+        print_ret (string)YOU_CANT_DRINK_FROM, (ThatOrThose)second, ".";
+      "You reach into the well, but the water trickles through your fingers before you can get it to your mouth. You'll need to collect it in a container before you can drink it.";
+    Take:
+      if (second == nothing && canteen in player)
+      {
+        print "(with the canteen)^";
+        second = canteen;
+      }
+      if (second == nothing)
+        "You need a container to put it in, something like a bucket or a canteen so that it doesn't splash all over the place.";
+      if (second ~= canteen)
+        "You can't put the water in ", (ThatOrThose)second, ".";
+      if (canteen hasnt open)
+      {
+        print (string)FIRST_OPENING_CANTEEN;
+        give canteen open;
+      }
+      if (water in canteen)
+        "The canteen is already full.";
+      move water to canteen;
+      print_ret (string)YOU_FILL_CANTEEN;
+    ],
+has scenery;
+
+!----------------------------------------
+! Water
+!----------------------------------------
+Object water "water"
+with
+  article SOME,
+  name 'water',
+  description "It's the life-giving water that you got from the well in the oasis.",
+  before
+  [;
+    Drink:
+      if (second ~= nothing && second ~= canteen)
+        print_ret (string)YOU_CANT_DRINK_FROM, (ThatOrThose)second, ".";
+      if (player has general)
+        "You take another sip of water and save the rest for later.";
+      give player general;
+      StopDaemon(desert);
+      remove self;
+      "You drink from the canteen until all the water is gone. Ahh, you feel so refreshed.";
+    Empty:
+      remove water;
+      print_ret (string)YOU_EMPTY_CANTEEN;
+    Take:
+      "If you want to take the water out of the canteen, just empty it.";
+  ],
+has;
+
+!========================================
+! Room 12: Desert
+!========================================
+Object room12 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room12,
+  s_to room13,
+  e_to room07,
+  w_to room12,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "east.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!========================================
+! Room 13: Desert
+!========================================
+Object room13 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room07,
+  s_to room14,
+  e_to room14,
+  w_to room12,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "north.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!========================================
+! Room 14: Desert
+!========================================
+Object room14 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room06,
+  s_to room13,
+  e_to room15,
+  w_to room13,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "north or west.";
+      if (camel hasnt general)
+        "Examine the camel and do what is suggested.";
+      if (meat has scenery)
+      {
+        print "Recall what you were told when you shot the camel. You can do the same";
+        if (knife notin player)
+          print ", but you'll need a knife";
+        ".";
+      }
+  ],
+has light;
+
+!----------------------------------------
+! Camel
+!----------------------------------------
+Object camel "camel" room14
+with
+  name 'camel' 'rump' 'hide',
+  short_name
+  [;
+    if (self has general)
+      print "dead ";
+    rfalse;
+  ],
+  description
+  [;
+    print "The camel is lying on the sand. ";
+    if (self hasnt general)
+      print_ret (string)POOR_THING_HAS_BROKEN_LEG, " The humane thing to do would be to put it out of its misery.";
+    print "It's now dead, since you shot it to put it out of its misery.";
+    if (meat hasnt scenery)
+      print " It's also got a huge chunk cut out of its rump.";
+    "";
+  ],
+  life
+  [;
+    if (self has general && action ~= ##Attack)
+      "It's dead.";
+    Attack:
+      if (self has general)
+        "It's already dead.";
+      if (second ~= knife)
+        "The poor camel is in enough pain without you attacking it. If you're trying to kill it, try to find a humane way to do it.";
+      print_ret (string)CUTTING_UP_LIVE_CAMEL_IS_CRUEL;
+  ],
+  before
+  [;
+    Cut:
+      if (second == nothing && knife in player)
+      {
+        print "(with the knife)^";
+        second = knife;
+      }
+      if (second == nothing)
+        "You don't have anything sharp enough to cut the camel's tough hide.";
+      if (second == chisel)
+        "That's a good idea, but the blade of the chisel is too narrow to cut up a camel. It's also quite blunt from chopping into dirt and rocks.";
+      if (second ~= knife)
+        "You can't cut the camel with ", (ThatOrThose)second, ".";
+      if (self hasnt general)
+        print_ret (string)CUTTING_UP_LIVE_CAMEL_IS_CRUEL;
+      if (meat hasnt scenery)
+        "You've already cut a huge chunk of meat out of the camel's rump. Blowflies are now buzzing around the raw flesh, so it doesn't look healthy to cut any more. You never know what germs you might pick up.";
+      give meat ~scenery;
+      "You take the knife and cut a huge chunk of flesh from the camel's rump. This will be good to keep in reserve in case you need emergency rations.";
+    Eat:
+      "Do you expect to eat a whole camel in one sitting? Maybe you could just cut a piece out of it.";
+    Enter:
+      print "Have you examined it? ";
+      if (self hasnt general)
+        print_ret (string)POOR_THING_HAS_BROKEN_LEG;
+      else
+        "It's dead.";
+    Shoot:
+      if (second == nothing && pistol in player)
+      {
+        print "(with the pistol)^";
+        second = pistol;
+      }
+      if (second == nothing)
+        print_ret (string)YOU_DONT_HAVE_FIREARM;
+      if (second ~= pistol)
+        print_ret (string)CANT_SHOOT_ANYTHING_WITH, (ThatOrThose)second, ".";
+      if (self has general)
+        "The camel is already dead, so don't waste your ammo.";
+      give self general;
+      move meat to location;
+      "You point the pistol at the camel's head and slowly pull the trigger. BLAM! You put the poor creature out of its misery, but that doesn't make you feel any better. You immediately recall how the nomadic people of this region use their dead camels for meat. Maybe you could do the same.";
+    Touch:
+      "Its hide is very tough.";
+    Take:
+      "Do you expect to just sling a camel over your shoulder? In your dreams!";
+  ],
+has animate neuter;
+
+!----------------------------------------
+! Broken leg
+!----------------------------------------
+Object "broken leg" room14
+with
+  name 'broken' 'leg',
+  description
+  [;
+    print "Camels are like horses. If they have a broken leg, there's really nothing much you can do, except to put the poor creature out of its misery";
+    if (camel has general)
+      print ", which you've already done";
+    ". It makes you glad you're not a camel. It's also a reminder that you need to be extremely careful in the desert.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Camel meat
+!----------------------------------------
+Object meat "camel meat"
+with
+  article SOME,
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'camel' or 'meat' or 'chunk' or 'of' or 'flesh')
+    {
+      i++;
+      if (nw == 'camel' && TestScope(camel))
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description "It's the chunk of meat that you cut from the dead camel.",
+  before
+  [;
+    if (self has scenery && action ~= ##Cut)
+    {
+      PrintMsg(MSG_PARSER_NOSUCHTHING);
+      rtrue;
+    }
+    Cut:
+      <<Cut camel second>>;
+    Eat:
+      "It's raw. Either cook it first or save it for an emergency.";
+  ],
+has scenery;
+
+!========================================
+! Room 15: Desert
+!========================================
+Object room15 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room16,
+  s_to room21,
+  e_to room21,
+  w_to room14,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "north or west.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!========================================
+! Room 16: Desert
+!========================================
+Object room16 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room17,
+  s_to room15,
+  e_to room20,
+  w_to room06,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "west.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!========================================
+! Room 17: Desert
+!========================================
+Object room17 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room18,
+  s_to room16,
+  e_to room19,
+  w_to room17,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "south.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!========================================
+! Room 18: Desert
+!========================================
+Object room18 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room18,
+  s_to room19,
+  e_to room18,
+  w_to room17,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "south or west.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!----------------------------------------
+! Knife
+!----------------------------------------
+Object knife "knife" room18
+with
+  name 'knife' 'long' 'beautifully' 'decorated' 'handle',
+  description "It's a long knife with a beautifully decorated handle, probably of Bedouin design.",
+has;
+
+!========================================
+! Room 19: Desert
+!========================================
+Object room19 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room18,
+  s_to room20,
+  e_to room20,
+  w_to room17,
+  before
+  [;
+    Dig:
+      "Do you want to dig up an entire pyramid? By hand? In this heat? Without a shovel? I think you might have a touch of sun stroke.";
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "south or west.";
+      if (hole in nothing)
+        "Find the entrance to the pyramid.";
+  ],
+has light;
+
+!----------------------------------------
+! Tip of a pyramid
+!----------------------------------------
+Object "tip of a pyramid" room19
+with
+  article THE,
+  name 'something' 'thing' 'sticking' 'out' 'of' 'the' 'sand' 'tip' 'top' 'a//' 'pyramid',
+  initial "There's something sticking out of the sand here.",
+  description
+  [;
+    print "It looks like the tip of a pyramid. Blimey, there's a pyramid in the desert sand right under your feet! It must be the pyramid that Simhel told you about. ";
+    if (hole in nothing)
+      "It would take an eternity to dig it out. You wonder if there's another entrance nearby.";
+    else
+      "That hole you found nearby is probably the entrance.";
+  ],
+has static;
+
+!========================================
+! Room 20: Desert
+!========================================
+Object room20 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room19,
+  s_to room21,
+  e_to room19,
+  w_to room16,
+  before
+  [;
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "west.";
+      print_ret (string)DESERT_HINT;
+  ],
+has light;
+
+!========================================
+! Room 21: Desert
+!========================================
+Object room21 "Desert"
+with
+  description DESERT_DESCRIPTION,
+  n_to room20,
+  s_to room15,
+  e_to room21,
+  w_to room15,
+  d_to
+  [;
+    if (hole in self)
+    {
+      if (player hasnt general)
+        StopDaemon(desert);
+      return room22;
+    }
+  ],
+  before
+  [;
+    Go:
+      if (hole notin self && selected_direction == n_to or s_to or e_to or w_to)
+      {
+        move hole to self;
+        if (player hasnt general)
+          StopDaemon(desert);
+        print "Suddenly, the sand gives way beneath your feet and you tumble through a funnel-like hole. You land with a painful thud on a stone staircase as sand rains down on you.^^";
+        PlayerTo(room22, 2);
+        rtrue;
+      }
+    Hint:
+      if (player hasnt general)
+        print_ret (string)THIRST_HINT, "north or west.";
+      if (hole in nothing)
+        "Don't just stand there, move!";
+  ],
+has light;
+
+!----------------------------------------
+! Hole
+!----------------------------------------
+Object hole "hole"
+with
+  name 'hole',
+  description "It's a funnel-shaped hole that leads to the stone staircase.",
+  before
+  [;
+    Enter:
+      <<Go FAKE_D_OBJ>>;
+  ],
+has static;
+
+!========================================
+! Room 22: Stone Staircase
+!========================================
+Object room22 "Stone Staircase"
+with
+  description "You're on a narrow stone staircase that appears to be the entrance to the pyramid. Sunlight streams in from the hole above you and a trickle of sand still falls from the hole. The sunlight is quickly swallowed up by a thick blanket of darkness below. The light allows you to see that the stairway has collapsed at this point, so that there's nothing but a drop where the stairs should be. If you go down, you may not be able to get back again.",
+  u_to
+  [;
+    if (player hasnt general)
+    {
+      desert.time_left = 20;
+      StartDaemon(desert);
+    }
+    return room21;
+  ],
+  d_to
+  [ x y;
+    if (flashlight notin player || pistol notin player || chisel notin player || knife notin player || meat notin player)
+    {
+      print "Aren't you forgetting something? ";
+      if (checklist hasnt general)
+        "You haven't read your checklist.";
+      else
+        "Remember what it said on your checklist.";
+    }
+    if (flashlight hasnt light)
+      "Are you kidding? It's dark down there. Only a fool would jump into darkness.";
+    x = child(player);
+    while (x)
+    {
+      y = sibling(x);!Save for next loop
+      if (x hasnt worn)
+        move x to room23;
+      x = y;
+    }
+    print "With a foolhardy leap, you launch yourself into the darkness and hope for the best... You land with a thud in a pile of debris. Fortunately, you didn't break any bones, but you dropped all your belongings.^^";
+    return room23;
+  ],
+  before
+  [;
+    Hint:
+      if (room04 hasnt visited)
+        "You left a bunch of stuff in your Jeep.";
+      if (checklist in nothing)
+        "The book contains more than just translations.";
+      if (checklist hasnt general)
+        "Read the checklist.";
+      if (flashlight notin player || pistol notin player || chisel notin player || knife notin player || meat notin player)
+        "Make sure you have everything on the checklist before venturing into the dark.";
+      if (flashlight hasnt light)
+        "Turn on your flashlight before venturing into darkness.";
+      "Jump!";
+    Jump:
+      <<Go FAKE_D_OBJ>>;
+  ],
+has light;
+
+!----------------------------------------
+! Staircase
+!----------------------------------------
+Object "staircase" room22
+with
+  name 'narrow' 'stone' 'staircase' 'stairway' 'stair' 'stairs' 'step' 'steps',
+  description "The narrow staircase goes up to the sunlight beyond the hole and down to the gloom below. As the staircase has collapsed, going down could be risky.",
+  before
+  [;
+    Climb:
+      <<Go FAKE_U_OBJ>>;
+  ],
+has scenery;
+
+!----------------------------------------
+! Hole
+!----------------------------------------
+Object "hole" room22
+with
+  name 'hole' 'sunlight' 'entrance' 'trickle' 'of' 'sand',
+  description "The hole above will take you back to the sunlight and the desert heat.",
+  before
+  [;
+    Exit:
+      <<Go FAKE_U_OBJ>>;
+  ],
+has scenery;
+
+!----------------------------------------
+! Gloom
+!----------------------------------------
+Object "gloom" room22
+with
+  article THE,
+  name 'gloom' 'dark' 'darkness' 'pile' 'of' 'debris',
+  description "When you peer into the gloom, you think you can see a pile of debris, but you can't be sure in the darkness.",
+has scenery;
+
+!========================================
+! Room 23: Ancient Egyptian Tomb
+!========================================
+Object room23 "Ancient Egyptian Tomb"
+with
+  description "You're now on a pile of debris in the centre of an ancient Egyptian tomb. In the dim light, you can see that the debris is from the collapsed stairway, which is now several metres above you and out of your reach. Corridors disappear into the darkness to the east and west.",
+  e_to room24,
+  w_to room28,
+  u_to "The bottom of the stairway is out of your reach. You should have realised that when you jumped down. If you ever hope to escape from this pyramid, you're going to have to find another way out.",
+  before
+  [;
+    Hint:
+      if (remains in nothing)
+        "Try pulling the arm and do what's suggested.";
+      if (lighter in nothing)
+        "Search the remains.";
+  ],
+has;
+
+!----------------------------------------
+! Ancient Egyptian tomb
+!----------------------------------------
+Object "tomb" room23
+with
+  name 'centre' 'of' 'ancient' 'egyptian' 'tomb',
+  description "You're assuming this is an ancient Egyptian tomb. You just hope that it doesn't end up being your tomb.",
+has scenery;
+
+!----------------------------------------
+! Corridor (floating object)
+!----------------------------------------
+Object "corridor"
+with
+  name 'narrow' 'corridor' 'corridors',
+  description
+  [;
+    print "The corridor goes from east to west";
+    if (self in room25)
+      ", but the eastern end is blocked off and there's no way through.";
+    print " with darkness at both ends";
+    if (self in room24)
+      print ". There's also a branch to the north";
+    ".";
+  ],
+  found_in room23 room24 room25 room28,
+has scenery;
+
+!----------------------------------------
+! Skeletal arm
+!----------------------------------------
+Object arm "skeletal arm" room23
+with
+  name 'skeletal' 'arm' 'human' 'forearm' 'skeleton' 'bone' 'bones' 'bony' 'boney' 'finger' 'fingers',
+  initial "A skeletal arm emerges from the pile of debris.",
+  description "It's a human forearm with bony fingers. The rest of the skeleton is buried beneath the debris.",
+  before
+  [;
+    Dig, Pull, Push, Take:
+      "You tug on the arm, but it's still firmly attached to the rest of the body. You'll need to clear the debris to expose it.";
+  ],
+has static;
+
+!----------------------------------------
+! Debris
+!----------------------------------------
+Object "debris" room23
+with
+  article SOME,
+  name 'pile' 'of' 'debris' 'large' 'stones' 'rubble',
+  description
+  [;
+    print "The debris consists of large stones and rubble from the collapsed staircase.";
+    if (remains in nothing)
+      print " It would be hard to remove it.";
+    "";
+  ],
+  before
+  [;
+    Dig, Pull, Push, Remove, Search:
+      if (remains notin nothing)
+        "You've already exposed the archaeologist's remains, so there's no point moving any more of the debris.";
+      remove arm;
+      move remains to location;
+      "You patiently lift the stones one by one and place them to the side of the pile until you've exposed", (string)REMAINS_OF_ARCHAEOLOGIST;
+    Take:
+      "There's too much of it. Perhaps try clearing or digging some of it.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Staircase
+!----------------------------------------
+Object "staircase" room23
+with
+  name 'staircase' 'collapsed' 'stairway',
+  description "The collapsed staircase is now several metres above you and out of your reach. You hope there's another way out of this pyramid.",
+has scenery;
+
+!----------------------------------------
+! Remains of archaeologist
+!----------------------------------------
+Object remains "archaeologist"
+with
+  article "the remains of an",
+  name 'remains' 'of' 'archaeologist' 'archeologist' 'body' 'corpse' 'man' 'skeleton' 'bones',
+  description
+  [;
+    print "It's", (string)REMAINS_OF_ARCHAEOLOGIST;
+    if (lighter in nothing)
+      print " You wonder whether he carries any identity or has anything that might be useful to you.";
+    "";
+  ],
+  life
+  [;
+    "Don't waste your time. He's well and truly dead.";
+  ],
+  before
+  [;
+    Eat:
+      "There's nothing but bones.";
+    Search:
+      print "You carefully pick through the remains of the poor archaeologist";
+      if (lighter notin nothing)
+        print_ret (string)DONT_FIND_ANYTHING_OF_INTEREST;
+      move lighter to location;
+      " and find a lighter.";
+    Take:
+      "Ooh, yuck. Don't even think about it.";
+  ],
+has animate pluralname;
+
+!----------------------------------------
+! Lighter
+!----------------------------------------
+Object lighter "Zippo lighter"
+with
+  name 'old' 'zippo' 'lighter',
+  short_name
+  [;
+    if (self has light)
+      print "lit ";
+    rfalse;
+  ],
+  invent
+  [;
+    if (inventory_stage == 2)
+      rtrue;
+  ],
+  description
+  [;
+    print "It's an old Zippo lighter like those issued to the US troops during World War II. It's currently turned ";
+    if (self has light)
+      "on.";
+    else
+      "off.";
+  ],
+  before
+  [;
+    Burn, SwitchOn:
+      if (self has light)
+        "It's already on.";
+      give self light;
+      "You switch the lighter on.";
+    Extinguish, SwitchOff:
+      if (self hasnt light)
+        "It's already off.";
+      give self ~light;
+      "You switch the lighter off.";
+  ],
+has;
+
+!========================================
+! Room 24: Narrow Corridor
+!========================================
+Object room24 "Narrow Corridor"
+with
+  description "The narrow corridor leads east and west, but there's also a branch to the north. All three directions lead into darkness.",
+  n_to room26,
+  e_to room25,
+  w_to room23,
+has;
+
+!========================================
+! Room 25: Narrow Corridor
+!========================================
+Object room25 "Narrow Corridor"
+with
+  description "You've entered a narrow corridor that meets a bare rock wall to the east. The floor is composed of large granite slabs and the low walls are carved into the hard rock. This is possibly a part of the pyramid that was never finished. Therefore, the only possible exit is to the west.",
+  w_to room24,
+  before
+  [;
+    Go:
+      if (player in slab)
+      {
+        <Exit slab>;
+        new_line;
+      }
+    Hint:
+      if (crack notin self && player notin slab)
+        "Why is that slab raised? Step on it to find out.";
+      if (player in slab && knife notin crack)
+        "Jam something into the crack to prevent the slab rising when you get off it.";
+  ],
+  after
+  [;
+    Go:
+      if (self hasnt visited)
+        print "As you enter the dark room, you trip over something and almost fall over.^^";
+  ],
+has;
+
+!----------------------------------------
+! Walls
+!----------------------------------------
+Object "walls" room25
+with
+  name 'wall' 'walls' 'bare' 'hard' 'rock' 'low',
+  description "The bare rock walls are unadorned by any decorations.",
+has pluralname scenery;
+
+!----------------------------------------
+! Floor
+!----------------------------------------
+Object "floor" room25
+with
+  article THE,
+  name 'floor' 'large' 'granite' 'stone' 'slabs',
+  description
+  [;
+    print "The floor is made of large granite slabs. The one in the middle is ";
+    if (crack notin location)
+      print_ret (string)RAISED_80_MM_ABOVE_FLOOR;
+    print (string)SURROUNDED_BY_CRACK;
+    if (knife in crack)
+      print (string)WITH_KNIFE_LODGED_IN_IT;
+    ".";
+  ],
+has scenery;
+
+!----------------------------------------
+! Slab
+!----------------------------------------
+Object slab "slab" room25
+class Surface
+with
+  name 'raised' 'granite' 'stone' 'slab',
+  short_name
+  [;
+    if (crack notin location)
+      print "raised ";
+    rfalse;
+  ],
+  description
+  [;
+    print "It's a large granite slab that's ";
+    if (crack notin location)
+      print_ret (string)RAISED_80_MM_ABOVE_FLOOR;
+    print (string)SURROUNDED_BY_CRACK;
+    if (knife in crack)
+      print (string)WITH_KNIFE_LODGED_IN_IT;
+    ".";
+  ],
+  before
+  [;
+    Enter:
+      if (player in self)
+        "You're already on it.";
+    Exit:
+      if (player notin self)
+        "You're not on it.";
+  ],
+  after
+  [;
+    Enter:
+      print "You step onto the slab.";
+      if (crack notin location)
+      {
+        move crack to location;
+        give opening open;
+        print " Your weight causes it to sink to the same level as the floor", (string)YOU_HEAR_RUMBLE_IN_DISTANCE, " There's now just a narrow crack left around the edge of the slab.";
+      }
+      "";
+    Exit:
+      print "You step off the slab. ";
+      if (knife in crack)
+        "The knife lodged in the crack prevents it rising back to its original position.";
+      remove crack;
+      give opening ~open;
+      "Once your weight is removed, it rises back to its original position", (string)YOU_HEAR_RUMBLE_IN_DISTANCE;
+  ],
+has enterable static supporter;
+
+!----------------------------------------
+! Crack
+!----------------------------------------
+Object crack "crack"
+class OpenContainer
+with
+  name 'narrow' 'crack',
+  description
+  [;
+    print "It's a narrow crack in the floor surrounding the lowered slab. ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Receive:
+      if (noun ~= knife)
+        print_ret (The)noun, " won't fit in the crack.";
+  ],
+  after
+  [;
+    LetGo:
+      if (noun == knife && player notin slab)
+      {
+        remove crack;
+        give opening ~open;
+        "As you withdraw the knife, the slab returns to its original position", (string)YOU_HEAR_RUMBLE_IN_DISTANCE;
+      }
+  ],
+has container open static;
+
+!========================================
+! Room 26: Sacrificial Chamber
+!========================================
+Object room26 "Sacrificial Chamber"
+with
+  description
+  [;
+    print "You're in the middle of a sacrificial chamber that's entered by corridors to the north and south. The east wall has a large circular opening";
+    if (opening hasnt open)
+      print (string)ITS_BLOCKED_FROM_OTHER_SIDE;
+    ".";
+  ],
+  n_to room30,
+  s_to room24,
+  e_to
+  [;
+    if (opening has open)
+      return room27;
+  ],
+  before
+  [;
+    Hint:
+      if (opening hasnt open)
+        "Find a way to clear whatever's blocking the opening.";
+  ],
+has;
+
+!----------------------------------------
+! Sacrificial chamber
+!----------------------------------------
+Object "sacrificial chamber" room26
+with
+  name 'sacrificial' 'chamber',
+  description "Fortunately, there are no sacrifices happening today.",
+has scenery;
+
+!----------------------------------------
+! Circular opening (floating object)
+!----------------------------------------
+Object opening "circular opening"
+with
+  name 'opening' 'large' 'circular' 'wall',
+  description
+  [;
+    print "There's a large circular opening, about 2 m in diameter, in the ";
+    if (self in room26)
+      print "eastern";
+    else
+      print "western";
+    print " wall";
+    if (self hasnt open)
+      print (string)ITS_BLOCKED_FROM_OTHER_SIDE;
+    ".";
+  ],
+  before
+  [;
+    Close:
+      if (self hasnt open)
+        "It's already closed.";
+      else
+        "You can't see any way to close it from here, but you can no doubt close it by reversing what you did to open it.";
+    Enter:
+      if (self in room26)
+        <<Go FAKE_E_OBJ>>;
+      else
+        <<Go FAKE_W_OBJ>>;
+    Open:
+      if (self has open)
+        "It's already open. That's why it's called an opening.";
+      else
+        "It's an opening, not a door. It's blocked from the other side and you can't see any way to get in.";
+  ],
+  found_in room26 room27,
+has scenery;
+
+!========================================
+! Room 27: Secret Tomb
+!========================================
+Object room27 "Secret Tomb"
+with
+  description "You're calling this a secret tomb, as you had to work out the secret to get here. A large stone sarcophagus rests in the centre of the floor. An enormous granite wheel in the west wall of the tomb is now open to reveal the circular opening beyond.",
+  w_to room26,
+  before
+  [;
+    Hint:
+      if (sarcophagus has locked)
+        "Have you examined the sarcophagus? You'll have to break that seal.";
+      if (staff in indentation)
+        "Have you examined the lid? You may need to pry the staff out of the indentation.";
+      if (sarcophagus hasnt open)
+        "Try prying the lid off the sarcophagus, but you'll need some leverage.";
+  ],
+has;
+
+!----------------------------------------
+! Tomb
+!----------------------------------------
+Object "tomb" room27
+with
+  name 'secret' 'tomb' 'room',
+  description "The tomb is dominated by an enormous sarcophagus.",
+has scenery;
+
+!----------------------------------------
+! Granite wheel
+!----------------------------------------
+Object "granite wheel" room27
+with
+  name 'enormous' 'granite' 'wheel',
+  description "This is obviously the wheel that produced the rumbling sound when you stood on the slab in the narrow corridor to the south. It has rolled aside to reveal the opening to the west.",
+  before
+  [;
+    Close, Pull, Push, Turn:
+      "It's way too heavy for you to budge.";
+    Open:
+      "It's already open.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Sarcophagus
+!----------------------------------------
+Object sarcophagus "sarcophagus" room27
+class OpenableContainer
+with
+  name 'sarcophagus' 'large' 'stone' 'coffin',
+  description
+  [;
+    print "It's a large stone sarcophagus covered in hieroglyphs and highlighted with gold leaf. ";
+    if (self has open)
+    {
+      print "Its heavy stone lid is now lying on the floor from where you prised it off. ";
+      <<Search self>>;
+    }
+    print "It's closed with a heavy stone lid. ";
+    if (self has locked)
+      print_ret (string)LID_IS_SEALED_TO_SARCOPHAGUS;
+    else
+      print_ret (string)LOOSE_ENOUGH_TO_MOVE;
+  ],
+  before
+  [;
+    Climb:
+      "There's no need to climb onto the sarcophagus. You can see everything you need from the ground.";
+    Close:
+      if (self hasnt open)
+        "It's already closed.";
+      else
+        "It would take four strong men to lift that lid back onto the sarcophagus.";
+    Enter:
+      if (self has open)
+        "There's no room with the mummy inside.";
+    Open:
+      if (self has locked)
+        "The sarcophagus is sealed. You'll have to break the seal before you can open it.";
+      if (self hasnt open)
+        "The lid is too heavy. You'll need to pry it open.";
+      else
+        "It's already open.";
+    Pry:
+      if (second == nothing)
+        print_ret (string)HAVE_TO_TELL_ME_WHAT_TO, "pry it with.";
+      if (second notin player)
+        "You don't have ", (the)second, ".";
+      if (second == chisel && sarcophagus has locked)
+      {
+        give sarcophagus ~locked;
+        "You find a spot to wedge the chisel between the sarcophagus and the lid, then work your way around the lid to break the seal. You should now be able to open it.";
+      }
+      if (second == chisel)
+        "The chisel is too short to get any leverage.";
+      if (second == staff && sarcophagus has locked)
+        "You'll need to break the seal before you can lever the lid off.";
+      if (second == staff)
+      {
+        give lid ~scenery static;
+        give sarcophagus open;
+        "You use the staff to gain some leverage and pry the lid open. You push with all your might and the lid slides off and crashes to the floor.";
+      }
+    Pull, Push, Take:
+      "It's far too heavy. It won't budge.";
+  ],
+has container openable locked static;
+
+!----------------------------------------
+! Hieroglyphs
+!----------------------------------------
+Object "hieroglyphs" room27
+with
+  name 'hieroglyphs' 'gold' 'leaf',
+  description
+  [;
+    print "The hieroglyphs are really beautiful and in remarkably good condition.";
+    if (self hasnt general)
+      print " You wonder if you'd have time to read them.";
+    "";
+  ],
+  before
+  [;
+    Read:
+      give self general;
+      "It will take a long time to translate all the hieroglyphs, but a quick skim indicates that this is not the tomb of the pharaoh, but of a priest.";
+  ],
+has pluralname scenery;
+
+!----------------------------------------
+! Mummy
+!----------------------------------------
+Object mummy "mummy" sarcophagus
+with
+  name 'mummy' 'bandages',
+  description "The mummy is wrapped in bandages and looks to be well preserved.",
+  before
+  [;
+    Pull, Push, Take:
+      "You're an archaeologist, not a grave robber. You know that the mummy and its bandages should be left undisturbed so that it can be further studied by experts in the field.";
+    Smell:
+      "It smells musty.";
+  ],
+has static;
+
+!----------------------------------------
+! Helmet
+!----------------------------------------
+Object helmet "helmet" sarcophagus
+with
+  name 'helmet' 'ceremonial' 'gold',
+  description
+  [;
+    print "It looks like a ceremonial helmet made of gold and covered in gemstones.";
+    if (self has general)
+      print " It's now got a huge dent in it and one of the gemstones is missing from where you got hit on the head by the cave-in.";
+    "";
+  ],
+  add_to_scope gemstones,
+has clothing;
+
+!----------------------------------------
+! Gemstones
+!----------------------------------------
+Object gemstones "gemstones"
+with
+  name 'gemstone' 'gemstones' 'gem' 'gems' 'amethyst' 'red' 'jasper' 'lapis' 'lazuli' 'turquoise',
+  description
+  [;
+    print "The Egyptians believed that the eternal nature of gemstones ensured protection for the dead and safe passage to the afterlife. You're no expert, but these ones look like amethyst, red jasper, lapis lazuli and turquoise.";
+    if (helmet has general)
+      print "You note that one of the gemstones is missing.";
+    "";
+  ],
+  before
+  [;
+    Take:
+      "They're attached to the helmet.";
+  ],
+has pluralname scenery;
+
+!----------------------------------------
+! Lid
+!----------------------------------------
+Object lid "lid" room27
+class Surface
+with
+  name 'lid' 'cover',
+  description
+  [;
+    print "The lid of the sarcophagus looks very heavy. ";
+    if (self has static)
+      "It's now lying on the floor from where you pryed it off.";
+    if (sarcophagus has locked)
+      print (string)LID_IS_SEALED_TO_SARCOPHAGUS, " ";
+    else
+      print (string)LOOSE_ENOUGH_TO_MOVE, " ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Close:
+      <<Close sarcophagus>>;
+    Open:
+      <<Open sarcophagus second>>;
+    Pry:
+      <<Pry sarcophagus second>>;
+    Pull, Push, Take:
+      if (self has scenery)
+        "It's attached to the sarcophagus.";
+      else
+        "It's too heavy.";
+  ],
+has scenery supporter;
+
+!----------------------------------------
+! Seal
+!----------------------------------------
+Object seal "seal" room27
+with
+  name 'seal',
+  description
+  [;
+    print "The seal ";
+    if (sarcophagus has locked)
+      "forms a bond between the sarcophagus and the lid to prevent air getting in.";
+    else
+      "is broken.";
+  ],
+  before
+  [;
+    Attack:
+      <<Pry sarcophagus second>>;
+  ],
+has scenery;
+
+!----------------------------------------
+! Indentation
+!----------------------------------------
+Object indentation "indentation" lid
+class OpenContainer
+with
+  article AN,
+  name 'indentation' 'indent',
+  description
+  [;
+    print "The indentation is shaped somewhat like a shepherd's crook. ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Receive:
+      if (noun ~= staff)
+        "The indentation will only accept something that's the same shape.";
+  ],
+  after
+  [;
+    Receive:
+      if (noun == staff)
+        "The staff fits perfectly into the indentation.";
+  ],
+has container open static;
+
+!----------------------------------------
+! Priest's staff
+!----------------------------------------
+Object staff "priest's staff" indentation
+with
+  name 'priest^s' 'staff' 'finely-decorated' 'shaft' 'hook',
+  description
+  [;
+    print "It's a priest's staff, maybe two metres long with a finely-decorated shaft and a hook at the end.";
+    if (self in indentation)
+      print " It fits perfectly into the indentation on the lid of the sarcophagus.";
+    "";
+  ],
+  before
+  [;
+    Pry:
+      if (self notin indentation)
+        "You've already done that.";
+      if (second == nothing && chisel in player)
+      {
+        print "(with the chisel)^";
+        second = chisel;
+      }
+      if (second == nothing)
+        "You'll need to tell me what to pry it out with.";
+      if (second ~= chisel)
+        "You can't pry it out with ", (ThatOrThose)second, ".";
+      move self to lid;
+      "You carefully ease the chisel into the crack between the staff and the indentation and gently prise it. The staff suddenly pops out and you lay it on the lid of the sarcophagus while you put the chisel away.";
+    Take:
+      if (self in indentation)
+        "It's a tight fit. You can't get your fingers around it, so you'll need to pry it out somehow.";
+  ],
+has;
+
+!========================================
+! Room 28: Narrow Corridor
+!========================================
+Object room28 "Narrow Corridor"
+with
+  description "This narrow corridor leads west to a dark room where you can hear ominous hisses. The east leads back to the pile of debris below the collapsed staircase.",
+  e_to room23,
+  w_to room29,
+  before
+  [;
+    Listen:
+      "You hear hissing coming from the west.";
+  ],
+has;
+
+!========================================
+! Room 29: Snake Room
+!========================================
+Object room29 "Snake Room"
+with
+  description "You can't tell the purpose of this room, but the marble floor is covered in snakes, so let's call it the snake room. As you hate snakes, the exit to the east looks very enticing.",
+  e_to room28,
+  before
+  [;
+    Hint:
+      if (room27 hasnt visited)
+        "Do some more exploring and come back later.";
+      if (brazier in pedestal)
+        "You can push the brazier off its pedestal if you can find something long enough to reach past the snakes.";
+      if (oil hasnt light)
+        "Oil is flammable, but you'll need a naked flame to light it.";
+      if (spade hasnt moved)
+        "The flame has cleared a path through the snakes, so you can get the spade now.";
+    Listen:
+      "You hear the hissing from the snakes.";
+  ],
+has;
+
+!----------------------------------------
+! Snake room
+!----------------------------------------
+Object "room" room29
+with
+  article THE,
+  name 'large' 'snake' 'room',
+  description "This is a large room that you've christened the snake room, as its floor is covered in snakes. The sooner you can get out of here, the better.",
+has scenery;
+
+!----------------------------------------
+! Marble floor
+!----------------------------------------
+Object "marble floor" room29
+with
+  name 'marble' 'floor',
+  description "You see nothing special about the marble floor, except that it's covered in snakes.",
+has scenery;
+
+!----------------------------------------
+! Marble pedestal
+!----------------------------------------
+Object pedestal "marble pedestal" room29
+class Surface
+with
+  name 'marble' 'pedestal',
+  description
+  [;
+    print "It's a marble pedestal that appears to be carved from the same marble as the floor. ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Pull, Push, Take, Touch:
+      if (oil hasnt light)
+        print_ret (string)CANT_REACH_BECAUSE_OF_SNAKES;
+  ],
+has static supporter;
+
+!----------------------------------------
+! Granite brazier
+!----------------------------------------
+Object brazier "granite brazier" pedestal
+class OpenContainer
+with
+  name 'ceremonial' 'granite' 'brazier',
+  description
+  [;
+    print "It looks like a ceremonial brazier that's been carved from solid granite. ";
+    <<Search self>>;
+  ],
+  before
+  [;
+    Attack:
+      if (verb_word == 'hit' or 'strike')
+        <<Pull self second>>;
+    Pull, Push:
+      if (self in pedestal && second == staff)
+      {
+        move self to location;
+        move oil to location;
+        "You use the staff to reach over the snakes and dislodge the brazier from the pedestal. It lands with a deafening crash and the oil spills all over the floor.";
+      }
+      if (self in pedestal)
+        print_ret (string)CANT_REACH_BECAUSE_OF_SNAKES;
+      if (second == staff || oil has light)
+        "It just rolls about on the marble floor.";
+      print_ret (string)CANT_REACH_BECAUSE_OF_SNAKES;
+    Receive:
+      if (oil hasnt light)
+        print_ret (string)CANT_REACH_BECAUSE_OF_SNAKES, (string)GET_RID_OF_SNAKES_FIRST;
+      "The brazier is now on its side and it's too heavy to move, so don't waste your time with it.";
+    Take:
+      if (oil hasnt light)
+        print_ret (string)CANT_REACH_BECAUSE_OF_SNAKES;
+      else
+        "It's too heavy.";
+    Touch:
+      if (oil hasnt light)
+        print_ret (string)CANT_REACH_BECAUSE_OF_SNAKES;
+      else
+        "It has a rough surface, as you'd expect.";
+  ],
+has container open static;
+
+!----------------------------------------
+! Oil
+!----------------------------------------
+Object oil "oil" brazier
+with
+  article SOME,
+  name 'oil',
+  description
+  [;
+    print "It's possibly castor oil, as the ancient Egyptians used this for anointing the body and as a fuel source.";
+    if (self has light)
+      print " As it's currently burning, the type of oil no longer matters.";
+    "";
+  ],
+  before
+  [;
+    if (self in brazier)
+      "You can't get to the oil because of the snakes.";
+    Burn:
+      if (self has light)
+        "The oil is already burning.";
+      if (second == nothing && lighter in player && lighter has light)
+      {
+        print "(with the lit lighter)^";
+        second = lighter;
+      }
+      if (second == nothing)
+        print_ret (string)HAVE_TO_TELL_ME_WHAT_TO, "light it with.";
+      if (second ~= lighter || lighter hasnt light)
+        "You can't light the oil with ", (ThatOrThose)second, ". You need a naked flame.";
+      give self light;
+      "You use the lighter to ignite the oil and the blue flame quickly spreads. The snakes react quickly and slither off to a safe distance from the flame so that they don't get barbecued. There's now a clear path to the spade on the far side of the pedestal.";
+    Take:
+      print "You can't very well take it when it's spilled all over the floor";
+      if (self has light)
+        print "...and burning to boot";
+      ".";
+    Touch:
+      if (self has light)
+        "It's burning, so it's too hot to touch.";
+      "It feels slippery.";
+  ],
+has static;
+
+!----------------------------------------
+! Snakes
+!----------------------------------------
+Object "snakes" room29
+with
+  name 'snakes' 'asps' 'serpents' 'tangle' 'of' 'horrible' 'poisonous',
+  description
+  [;
+    if (oil hasnt light)
+      print "There's a horrible tangle of snakes covering the marble floor.";
+    else
+      print "The burning oil has cleared a path through the snakes.";
+    " The snakes hiss menacingly, so you'd better keep your distance. You're not a herpetologist, so you don't know what sort of snakes they are, but they look poisonous. They're snakes. That's all you need to know.";
+  ],
+  life
+  [;
+    Attack:
+      "In your mind, the only good snake is a dead snake. In their mind, the only good human is a dead human. As you're outnumbered, you think it best to avoid them.";
+    ThrowAt:
+      if (noun == meat)
+        "The only meat that the snakes are interested in is you!";
+      "You think it best not to throw anything at the snakes, as you don't want to antagonise them.";
+  ],
+  before
+  [;
+    Shoot:
+      if (pistol in player)
+        "Save your ammo. There's too many of them.";
+    Take, Touch:
+      "Are you crazy? You hate snakes!";
+  ],
+  each_turn
+  [;
+    switch (random(40))
+    {
+      1: "^Those snakes look scary. You hate snakes.";
+      2: "^One of the snakes rears its head and hisses at you.";
+      3: "^The snakes flick their forked tongues at you.";
+      4: "^The snakes slither over the top of one another.";
+      5: "^You wonder how all these snakes got in here in the first place.";
+      6: "^You wonder what the snakes feed on. Hopefully, it's not archaeologists.";
+      7: "^You reckon the only good snake is a dead snake, but you know better than to attack a snake when it's backed up by hundreds of its mates.";
+      8: "^You hear a regular hissing coming from the snakes.";
+      9: "^You've never seen so many snakes in the one place in all your life.";
+      10: "^You wish those snakes would go away. You're going to be having nightmares about snakes for years to come.";
+    }
+  ],
+has animate neuter pluralname;
+
+!----------------------------------------
+! Spade
+!----------------------------------------
+Object spade "spade" room29
+with
+  name 'spade',
+  description "It's a spade.",
+  before
+  [;
+    Take:
+      if (oil hasnt light)
+        print_ret (string)CANT_REACH_BECAUSE_OF_SNAKES, (string)GET_RID_OF_SNAKES_FIRST;
+  ],
+has;
+
+!========================================
+! Room 30: Junction of Corridors
+!========================================
+Object room30 "Junction of Corridors"
+with
+  description "You've reached a T-Junction. The main corridor continues from north to south, while another branches off to the west.",
+  n_to room35,
+  s_to room26,
+  w_to room31,
+has;
+
+!----------------------------------------
+! Junction
+!----------------------------------------
+Object "junction" room30
+with
+  name 'junction' 't-junction' 'of' 'corridor' 'corridors',
+  description "The corridors go north, south and west. You'll need to follow them to see where they go.",
+has scenery;
+
+!========================================
+! Room 31: Burial Chamber
+!========================================
+Object room31 "Burial Chamber"
+with
+  description "This looks like a burial chamber with exits to the north and east. The short corridor to the east has clean, smooth walls, whereas the one to the north looks very rough and unfinished. You can hear high-pitched squeals and noises similar to the flapping of wings coming from that direction.",
+  n_to room32,
+  e_to room30,
+  before
+  [;
+    Listen:
+      "You hear high-pitched squeals and the flapping of wings coming from the north.";
+  ],
+has;
+
+!----------------------------------------
+! Burial chamber
+!----------------------------------------
+Object "burial chamber" room31
+with
+  name 'narrow' 'burial' 'chamber',
+  description "You're calling this a burial chamber because of its proximity to the sacrificial chamber, but there's really nothing here to indicate its function.",
+has scenery;
+
+!========================================
+! Room 32: Corridor
+!========================================
+Object room32 "Corridor"
+with
+  description
+  [;
+    print "This ancient corridor is clearly the home of a colony of bats. The ceiling is covered in bats, the floor is covered in guano and any exposed parts of the walls and ceiling are covered in cracked plaster. ";
+    if (bats hasnt general)
+      print "A cloud of bats prevents progress to the north.";
+    else
+      print "The exit to the north is now relatively clear of bats.";
+    " The only other exit is to the south.";
+  ],
+  n_to
+  [;
+    if (bats hasnt general)
+      "You can't get past the thousands of bats. You'll need to scare them off.";
+    if (debris in self)
+      print_ret (string)CANT_GET_PAST_DEBRIS;
+    else
+      return room33;
+  ],
+  s_to room31,
+  before
+  [;
+    Hint:
+      if (bats hasnt general)
+        "A loud noise should scare off those bats, but make sure your head is protected from any loose plaster that may fall from the ceiling.";
+      if (debris in self)
+        "You'll have to clear that debris before you can push on. I hope you remembered to bring a spade or shovel.";
+    Jump, WaveHands:
+      <<Scare bats>>;
+    Listen:
+      print "You can hear the ear-piercing shrieks of ";
+      if (bats hasnt general)
+        "thousands of bats.";
+      else
+        "hundreds of bats, but it's nowhere near as bad as it was before you scared most of them away.";
+    Smell:
+      "It really stinks in here.";
+  ],
+has;
+
+!----------------------------------------
+! Corridor
+!----------------------------------------
+Object "corridor" room32
+with
+  name 'ancient' 'corridor' 'unfinished',
+  description "This part of the corridor looks unfinished.",
+has scenery;
+
+!----------------------------------------
+! Walls
+!----------------------------------------
+Object "walls" room32
+with
+  name 'plaster' 'wall' 'walls' 'ceiling' 'cracked',
+  description "The walls and ceiling are covered in cracked plaster.",
+has pluralname scenery;
+
+!----------------------------------------
+! Bats
+!----------------------------------------
+Object bats "bats" room32
+with
+  name 'bats' 'cloud' 'colony' 'thousands' 'of' 'bat',
+  description
+  [;
+    print "Thousands of bats have taken up residence in this corridor. Their high-pitched squeaks and the smell of guano is unbearable.";
+    if (bats has general)
+      print " Fortunately, you've scared most of them away, but they'll no doubt return later.";
+    "";
+  ],
+  before
+  [;
+    Scare, ShoutAt, WaveAt:
+      "You try shouting and jumping up and down and waving your arms about like a lunatic, but the bats are unconcerned by your antics. Perhaps you need something louder.";
+    Shoot:
+      if (second == nothing && pistol in player)
+      {
+        print "(with the pistol)^";
+        second = pistol;
+      }
+      if (second == nothing)
+        print_ret (string)YOU_DONT_HAVE_FIREARM;
+      if (second ~= pistol)
+        print_ret (string)CANT_SHOOT_ANYTHING_WITH, (ThatOrThose)second, ".";
+      if (bats has general)
+        "You don't want to do that again. The last time you did it, you nearly got yourself killed.";
+      give bats general;
+      move debris to location;
+      print "The shot echoes down the corridor and is amplified in the confined spaces until the entire room vibrates. A dull rumble replaces the echo and large pieces of plaster and debris begin falling all around you in an enormous cloud of dust. One particularly large chunk of debris lands on your head ";
+      if (helmet has worn)
+      {
+        give helmet general;
+        "with a clang on your helmet. When the dust clears and the noise dissipates, you see that the noise and commotion has also scared away most of the bats.";
+      }
+      deadflag = 1;
+      "and splits your skull open. If you'd known this was going to happen, you would have worn some protective head gear.";
+  ],
+  each_turn
+  [;
+    switch (random(40))
+    {
+      1: "^The bats squeal. Don't they ever stop squealing?";
+      2: "^The ear-piercing shrill of the bats is very annoying.";
+      3: "^One of the bats flies past you and you feel the air from the flap of its wings.";
+      4: "^One of the bats flies straight at you, then diverts at the last moment. Their biosonar is amazing.";
+      5: "^One of the bats defecates on you. Ooh, how gross!";
+      6: "^One of the bats urinates on you. Now you're going to smell even worse than you already do.";
+      7: "^A bat hanging from the ceiling flaps its wings.";
+      8: "^A group of bats fly around your head, then fly off.";
+    }
+  ],
+has animate neuter pluralname;
+
+!----------------------------------------
+! Guano
+!----------------------------------------
+Object guano "guano" room32
+with
+  article "piles of",
+  name 'piles' 'of' 'guano',
+  description "Piles of guano are heaped all around you. It's mostly bat droppings and urine, but there's also the bones and remains of hundreds of dead bats. Needless to say, it stinks!",
+  before
+  [;
+    Take:
+      "You can't be serious! Have you smelt that stuff?";
+  ],
+has scenery;
+
+!----------------------------------------
+! Pile of debris
+!----------------------------------------
+Object debris "pile of debris"
+with
+  name 'pile' 'of' 'debris' 'rubble',
+  description "This is the debris that fell from the walls and ceiling when you shot the bats, together with the rubble that was already in here. There's a lot of debris, but you could dig your way through it.",
+  before
+  [;
+    Dig:
+      if (second == nothing && spade in player)
+      {
+        print "(with the spade)^";
+        second = spade;
+      }
+      if (second == nothing)
+        "There's too much debris to clear it all away with your hands.";
+      if (second ~= spade)
+        "You can't dig very far with ", (ThatOrThose)second, ".";
+      if (self in room32)
+        move self to room33;
+      else
+        move self to limbo;
+      "Using the spade, you dig a path through the debris until you can get past.";
+    Pull, Push, Take:
+      "There's too much of it. You'd need to dig your way through.";
+  ],
+has static;
+
+!========================================
+! Room 33: Top of Stone Staircase
+!========================================
+Object room33 "Top of Stone Staircase"
+with
+  description
+  [;
+    print "You're at the top of a large stone staircase";
+    if (debris in self)
+      print ", but you can't get to it because of all the debris";
+    ". The steps are roughly cut like those of a medieval dungeon. You can hear the sound of flowing water coming from the bottom of the steps. You've cleared a path through the corridor to the south.";
+  ],
+  s_to room32,
+  d_to
+  [;
+    if (debris in self)
+      print_ret (string)CANT_GET_PAST_DEBRIS;
+    else
+      return room34;
+  ],
+  before
+  [;
+    Hint:
+      if (debris in self)
+        "More debris? It worked once. It will work again here.";
+    Listen:
+      "You can hear flowing water at the bottom of the stairs.";
+  ],
+has;
+
+!----------------------------------------
+! Staircase (floating object)
+!----------------------------------------
+Object "staircase"
+with
+  name 'large' 'stone' 'staircase' 'stairway' 'stair' 'stairs' 'step' 'steps',
+  description
+  [;
+    if (debris in location)
+      "Access to the stairs is blocked by fallen debris.";
+    print "The rough-cut steps lead ";
+    if (self in room33)
+      print "down";
+    else
+      print "up";
+    " into the darkness.";
+  ],
+  before
+  [;
+    Climb, Enter:
+      if (self in room33)
+        <<Go FAKE_D_OBJ>>;
+      else
+        <<Go FAKE_U_OBJ>>;
+  ],
+  found_in room33 room34,
+has scenery;
+
+!========================================
+! Room 34: Foot of Stone Staircase
+!========================================
+Object room34 "Foot of Stone Staircase"
+with
+  description "You're at the foot of a staircase that fronts an underground stream. This may have served as a water supply during construction of the pyramid or maybe it's meant to provide water to sustain the dead in the afterlife. At any rate, your dim light reveals movement in the water.",
+  u_to room33,
+  before
+  [;
+    Hint:
+      if (meat notin limbo)
+        "Can't get to the bones? Time to feed the crocodiles.";
+      if (medallion in nothing)
+        "Search the bones.";
+  ],
+has;
+
+!----------------------------------------
+! Stream
+!----------------------------------------
+Object "stream" room34
+with
+  parse_name
+  [ nw i flag;
+    nw = NextWord();
+    while (nw == 'underground' or 'stream' or 'water')
+    {
+      i++;
+      if (nw == 'water' && TestScope(water))
+        flag++;
+      nw = NextWord();
+    }
+    if (i == flag)
+      return 0;
+    return i;
+  ],
+  description "It's easy to lose your bearings underground, but it looks like the stream flows towards the west, so this may well be the stream that feeds the oasis.",
+has scenery;
+
+!----------------------------------------
+! Crocodiles
+!----------------------------------------
+Object crocodiles "crocodiles" room34
+with
+  name 'crocodiles' 'croc' 'crocs',
+  description "You're surprised to find crocodiles under a pyramid, but they've no doubt migrated here from the Nile, which is further to the east. Crocodiles were widespread throughout the Nile in the time of Sinuhe. There was even a crocodile cult that worshipped the god Sobek, who is normally depicted as a human with a crocodile head.",
+  life
+  [;
+    Attack, Kiss:
+      deadflag = 1;
+      "Oops, that wasn't a very smart thing to do. The crocodiles are now aware of your presence and tear you to pieces.";
+    Give, ThrowAt:
+      if (noun ~= meat)
+        "The crocodiles are meat eaters. They're not likely to eat ", (a)noun, ".";
+      move meat to limbo;
+      "The crocodiles greedily dive into the meat and fight among themselves to get the biggest portion. As they are now distracted, you can get to the bones.";
+  ],
+  before
+  [;
+    Search, Take, Touch:
+      deadflag = 1;
+      "When you get near enough to ", (address)verb_word, " them, they're near enough to eat you...and they do!";
+    Shoot:
+      if (second == nothing && pistol in player)
+      {
+        print "(with the pistol)^";
+        second = pistol;
+      }
+      if (second == nothing)
+        print_ret (string)YOU_DONT_HAVE_FIREARM;
+      if (second ~= pistol)
+        print_ret (string)CANT_SHOOT_ANYTHING_WITH, (ThatOrThose)second, ".";
+      deadflag = 1;
+      "You take a shot at one of the crocodiles, but that just enrages them. The crocodiles lurch out of the water and rush you. You quickly turn to run up the stairs, but the crocodiles are quicker and turn you into crocodile lunch.";
+  ],
+  each_turn
+  [;
+    if (meat notin limbo)
+    {
+      switch (random(40))
+      {
+        1: "^The crocodiles look pretty docile, but they could strike without warning.";
+        2: "^The crocodiles float around in the stream like partially submerged logs.";
+        3: "^One of the crocodiles emerges from the stream, but it doesn't seem interested in you.";
+        4: "^One of the crocodiles makes a loud grunting noise.";
+        5: "^One of the crocodiles growls.";
+        6: "^One of the crocodiles slithers on the bank like a snake.";
+        7: "^The crocodiles may look harmless, but I can assure you, they're not.";
+        8: "^You wonder what crocodiles eat for lunch. Probably lost archaeologists.";
+      }
+    }
+    else
+    {
+      switch (random(40))
+      {
+        1: "^One of the crocodiles does a death roll.";
+        2: "^The crocodiles splash about as they fight over the camel meat.";
+        3: "^The crocodiles are fighting amongst themselves to get the biggest share of the camel meat.";
+        4: "^One of the crocodiles slides over the top of one of the others to get to the camel meat.";
+        5: "^The stream is churned up by the fighting crocodiles.";
+        6: "^You'd better not hang around here for too long. When the crocodiles are finished with the camel meat, they might come for you.";
+        7: "^The crocodiles churn up the stream like a washing machine.";
+        8: "^How long will it be before the crocodiles finish their meal of camel meat and come after you for dessert?";
+      }
+    }
+  ],
+has animate neuter pluralname;
+
+!----------------------------------------
+! Human bones
+!----------------------------------------
+Object bones "human bones" room34
+with
+  article "numerous",
+  name 'human' 'bone' 'bones' 'skeleton' 'rib' 'cage' 'pelvic' 'pelvis' 'sternum',
+  description
+  [;
+    print "They're clearly human bones, no doubt male judging by the broader rib cage and the shape of the pelvic bone.";
+    if (meat notin limbo)
+      " Unfortunately, the crocodiles prevent you getting any closer to examine the bones properly.";
+    if (medallion in nothing)
+    {
+      move medallion to location;
+      print " You find a medallion that has fallen into the rib cage below the sternum. These must be the bones of Sinuhe and the medallion must be the one he was wearing when he was fed to the crocodiles.";
+    }
+    "";
+  ],
+  before
+  [;
+    Search:
+      <<Examine self>>;
+  ],
+has pluralname static;
+
+!----------------------------------------
+! Medallion
+!----------------------------------------
+Object medallion "medallion"
+with
+  name 'medallion' 'medal',
+  short_name
+  [;
+    if (self has general)
+      print "shiny ";
+    rfalse;
+  ],
+  description
+  [;
+    print "It's probably Sinuhe's medallion. ";
+    if (self hasnt general)
+      "It's covered in dirt and dust from years in the pyramid.";
+    else
+      "It's now bright and shiny. In fact, the light reflected from the medallion is dazzling.";
+  ],
+  before
+  [;
+    Lift:
+      if (location == room35 && self has general && beam in location && passage notin location)
+      {
+        move passage to location;
+        "You raise the medallion above your head and the beam of light reflects off the shiny surface. The beam is focussed on a precise point on the wall and a mysterious mechanism opens a passage in the eastern wall.";
+      }
+    Insert:
+      if (second == beam)
+        <<Lift self>>;
+    Reflect:
+      "You can't see anything that will reflect the medallion, but maybe you could reflect something with it.";
+    Rub:
+      if (self has general)
+        "You clean it again, but it's not going to get any shinier than it already is.";
+      give self general;
+      "You wipe all the dirt and grime off the medallion, then shine it on your sleeve until it dazzles.";
+    Wear:
+      "If there was ever a ribbon attached to this medallion, it perished long ago, so you can no longer wear it.";
+  ],
+has;
+
+!========================================
+! Room 35: In Front of Decorated Wall
+!========================================
+Object room35 "In Front of Decorated Wall"
+with
+  description
+  [;
+    print "You find yourself standing in front of a highly-decorated wall, at the base of which is a short lever. The corridor that brought you here is to the south.";
+    if (passage in self)
+      print " There's also an additional passage to the east that was exposed after you performed that neat trick with the beam of light. The Egyptians were certainly master craftsmen when it came to that sort of thing.";
+    "";
+  ],
+  e_to
+  [;
+    if (passage in self)
+    {
+      if (medallion notin player)
+        "Aren't you forgetting something?";
+      else
+        return room36;
+    }
+  ],
+  s_to room30,
+  before
+  [;
+    Hint:
+      if (passage in self)
+        "Where does that passage go?";
+      if (beam notin location)
+        "What does that lever do?";
+      print "Have you examined the wall? Try to replicate what the priest is doing";
+      if (medallion notin player)
+        ", but you'll need something to reflect the beam.";
+      if (medallion in player && medallion hasnt general)
+        ", but you'll need something shiny. The medallion might work if it wasn't so dirty.";
+      if (medallion in player)
+        ". Either reflect the beam with something shiny or raise something shiny above your head.";
+  ],
+has;
+
+!----------------------------------------
+! Wall
+!----------------------------------------
+Object "wall" room35
+with
+  name 'very' 'high' 'decorated' 'wall' 'image' 'priest' 'yellow' 'line',
+  description
+  [;
+    print "This wall is decorated by hieroglyphs, but it also features a rather striking image of a priest holding his hands above his head. This in itself is not unusual, but there's a yellow line that drops down from above his head, then reflects off his cupped hands. ";
+    if (passage notin location)
+      "What could that represent?";
+    else
+      "You now realise that this represents the beam of light being reflected off the medallion.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Hieroglyphs
+!----------------------------------------
+Object "hieroglyphs" room35
+with
+  name 'hieroglyphs' 'symbols',
+  description "The hieroglyphs appear to be directions to someone who has risen from the dead. They say something about Ra, the sun god, showing the way to the palace.",
+  before
+  [;
+    Read:
+      <<Examine self>>;
+  ],
+has pluralname scenery;
+
+!----------------------------------------
+! Lever
+!----------------------------------------
+Object lever "lever" room35
+with
+  name 'short' 'lever',
+  description "It's a short lever in front of the decorated wall.",
+  before
+  [;
+    Pull:
+      if (beam in location)
+        "You can't pull it any further.";
+      move beam to location;
+      move slit to location;
+      "You pull the lever towards you and a beam of light shines down from the ceiling.";
+    Push:
+      if (beam notin location)
+        "You can't push it any further.";
+      remove beam;
+      remove slit;
+      "You push the lever away from you and the beam of light disappears.";
+  ],
+has scenery;
+
+!----------------------------------------
+! Ceiling
+!----------------------------------------
+Object "ceiling" room35
+with
+  name 'ceiling' 'domed',
+  description
+  [;
+    print "It's a domed ceiling with no notable features";
+      if (beam in location)
+       print ", apart from the beam of light shining through the slit";
+     ".";
+  ],
+has scenery;
+
+!----------------------------------------
+! Narrow slit
+!----------------------------------------
+Object slit "narrow slit"
+with
+  name 'narrow' 'slit',
+  description "There's a beam of light shining through the slit.",
+has scenery;
+
+!----------------------------------------
+! Beam of light
+!----------------------------------------
+Object beam "beam of light"
+with
+  name 'beam' 'of' 'light' 'sunlight' 'sun',
+  description "It's possibly a concentrated beam of sunlight. It appears to be coming from a narrow slit in the ceiling.",
+  before
+  [;
+    Reflect:
+      if (second == nothing && medallion in player && medallion has general)
+      {
+        print "(with the shiny medallion)^";
+        second = medallion;
+      }
+      if (second == nothing)
+        print_ret (string)HAVE_TO_TELL_ME_WHAT_TO, "reflect it with.";
+      if (second ~= medallion || medallion hasnt general)
+        "You can't reflect the beam with ", (ThatOrThose)second, ". You would need something with a shiny surface.";
+      <<Lift medallion>>;
+  ],
+has static;
+
+!----------------------------------------
+! Passage in the east wall
+!----------------------------------------
+Object passage "passage"
+with
+  name 'passage',
+  description "It's the passage that was exposed after you reflected the beam of light onto the decorated wall. You're now curious to find out what lies beyond.",
+  before
+  [;
+    Enter:
+      <<Go FAKE_E_OBJ>>;
+  ],
+has scenery;
+
+!========================================
+! Room 36: Remains of Palace
+!========================================
+Object room36 "Remains of Palace"
+with
+  description
+  [;
+    deadflag = 2;
+    "As you emerge from the darkness of the pyramid, you are blinded by the bright sunlight. It takes a few moments for your eyes to adjust. When they do, you look around to find yourself in the remains of the palace. A few of the villagers are searching through the rubble. When they see you emerge, they're initially confused, but when they see that you've got the medallion of Sinuhe, they're elated and call the others with shouts of joy.^^Everyone rushes over to find out what's going on. They're amazed that a stranger has found the object that they've been searching for for years.^^The villagers elevate you above their heads and carry you back to the village to celebrate. You are their hero. The wrath of Anubis will be appeased and the people of El Rajid will remember the name of Ken Richards for years to come.";
+  ],
+has light;
+
+!========================================
+! Limbo
+!========================================
+Object limbo;
+
+!========================================
+! Printing rules
+!========================================
+[ consultWord word i;
+  for (i=0:i<WordLength(word):i++)
+    print (char)LowerCase(WordAddress(word)->i);
+];
+
+[ DoesntOrDont obj;
+  if (obj has pluralname)
+    print "don't";
+  else
+    print "doesn't";
+];
+
+[ firstConsultWord word i;
+  for (i=0:i<WordLength(word):i++)
+    if (i == 0)
+      print (char)UpperCase(WordAddress(word)->i);
+    else
+      print (char)LowerCase(WordAddress(word)->i);
+];
+
+!========================================
+! Other routines
+!========================================
+[ _UpdateDarkness p_silent _ceil _old_darkness _darkness;
+  if (location == thedark)
+    _old_darkness = true;
+  _ceil = ScopeCeiling(player);
+  if (_LookForLightInObj(_ceil, _ceil) == false)
+    _darkness = true;
+  if (_darkness ~= _old_darkness)
+    scope_modified = true;
+  if (_darkness)
+    location = thedark;
+  else
+    location = real_location;
+  if (_darkness ~= _old_darkness && p_silent == false)
+  {
+    new_line;
+    <Look>;
+  }
+];
+
+[ LowerCase c; ! for ZSCII matching ISO 8859-1
+  switch (c)
+  {
+    'A' to 'Z': c = c + 32;
+    202, 204, 212, 214, 221: c--;
+    217, 218: c = c - 2;
+    158 to 160, 167, 168, 208 to 210: c = c - 3;
+    186 to 190, 196 to 200: c = c - 5 ;
+    175 to 180: c = c - 6;
+  }
+  return c;
+];
+
+[ PlayerDescription;
+  print "Your name is Ken Richards. You're an archaeologist investigating the legend of the lost medallion of Sinuhe.";
+  if (desert in location)
+  {
+    print " It's hot and dry in the desert";
+    if (player hasnt general)
+      print " and you're terribly thirsty. If you don't quench your thirst soon, you'll die in the desert heat before you can";
+    else
+      print ", but your thirst has been quenched...for now. You need to push on to";
+    " find the medallion.";
+  }
+  if (room23 has visited)
+  {
+    print " You're covered in dirt from the debris in the ancient tomb";
+    if (bats has general)
+      print " and plaster dust from the collapse in the bat colony";
+    print ".";
+  }
+  "";
+];
+
+[ UpperCase c; ! for ZSCII matching ISO 8859-1
+  switch (c)
+  {
+    'a' to 'z': c = c - 32;
+    201, 203, 211, 213, 220: c++;
+    215, 216: c = c + 2;
+    155 to 157, 164, 165, 205 to 207: c = c + 3;
+    181 to 185, 191 to 195: c = c + 5 ;
+    169 to 174: c = c + 6;
+  }
+  return c;
+];
+
+!========================================
+! Grammar
+!========================================
+Extend 'ask'
+  * 'about' topic -> AskAbout;
+
+Extend 'blow'
+  * 'on'/'onto' noun -> Blow
+  * 'out' noun -> Extinguish
+  * noun 'out' -> Extinguish;
+
+Extend 'cut' replace
+  * noun -> Cut
+  * 'off' noun -> Cut
+  * noun 'off' -> Cut
+  * noun 'with' held -> Cut
+  * 'off' noun 'with' held -> Cut
+  * noun 'off' 'with' held -> Cut;
+
+Extend 'dig'
+  * -> Dig;
+
+Extend 'drink' replace
+  * noun -> Drink
+  * noun 'from' noun -> Drink
+  * 'from' noun -> DrinkFrom;
+
+Extend only 'feed'
+  * creature 'with' noun -> Give reverse;
+
+Extend 'fill' first
+  * noun 'with' noun -> FillWith;
+
+Extend 'get' first
+  * noun 'with' held -> Take;
+
+Extend only 'hold'
+  * 'up' noun -> Lift
+  * noun 'up' -> Lift
+  * noun 'above' 'head' -> Lift;
+
+Extend 'lock' first
+  * noun -> Lock;
+
+Extend 'look'
+  * 'into' noun -> Search
+  * 'behind'/'under' noun -> LookUnder;
+
+Extend 'pry' replace
+  * noun -> Pry
+  * 'apart'/'off'/'open'/'out' noun -> Pry
+  * noun 'apart'/'off'/'open'/'out' -> Pry
+  * noun 'with' held -> Pry
+  * 'apart'/'off'/'open'/'out' noun 'with' held -> Pry
+  * noun 'apart'/'off'/'open'/'out' 'with' held -> Pry;
+
+Extend 'pull'
+  * noun 'with' noun -> Push;
+
+Extend 'push'
+  * noun 'with' noun -> Push;
+
+Extend 'put'
+  * noun 'under' noun -> Insert;
+
+Extend 'read' first
+  * noun -> Read;
+
+Extend only 'say' first
+  * topic -> Say;
+
+Extend only 'speak' replace
+  * -> Talk
+  * creature -> Talk
+  * noun -> Talk
+  * 'to'/'with' creature -> Talk
+  * 'to'/'with' noun -> Talk
+  * 'to'/'with' creature 'about' topic -> Ask
+  * 'to'/'with' noun 'about' topic -> Ask;
+
+Extend only 'take' first
+  * noun 'with' held -> Take;
+
+Extend 'throw'
+  * held 'to' noun -> ThrowAt;
+
+Extend 'unlock' first
+  * noun -> Unlock;
+
+Extend 'wave'
+  * 'at' noun -> WaveAt;
+
+Verb meta 'about' 'info'
+  * -> About;
+
+Verb 'call' 'holler' = 'shout';
+
+Verb meta 'credits'
+  * -> Credits;
+
+Verb 'drive'
+  * noun -> Drive;
+
+Verb 'extinguish' 'douse' 'snuff' 'unlight'
+  * noun -> Extinguish
+  * noun 'with' held -> Extinguish;
+
+Verb 'fire'
+  * held -> Fire
+  * held 'at' noun -> Shoot reverse
+  * 'at' noun 'with' held -> Shoot;
+
+Verb meta 'help' 'instructions'
+  * -> Help;
+
+Verb 'hint' 'clue'
+  * -> Hint;
+
+Verb 'hook' = 'pull';
+
+Verb 'inspect' = 'examine';
+
+Verb 'kick' 'strike' = 'attack';
+
+Verb 'lift' 'raise'
+  * noun -> Lift
+  * noun 'above' 'head' -> Lift;
+
+Verb 'mount' 'ride' = 'enter';
+
+Verb 'pat' 'pet' 'stroke' = 'touch';
+
+Verb 'reflect' 'mirror'
+  * noun -> Reflect
+  * noun 'off'/'with' noun -> Reflect;
+
+Verb 'scare' 'frighten' 'shock' 'spook' 'startle' 'terrify'
+  * creature -> Scare;
+
+Verb 'shoot'
+  * -> Shoot
+  * noun -> Shoot
+  * noun 'with' held -> Shoot
+  * 'at' noun -> Shoot
+  * 'at' noun 'with' held -> Shoot
+  * held 'at' noun -> Shoot reverse;
+
+Verb 'start'
+  * noun -> SwitchOn;
+
+Verb 'steal' = 'take';
+
+Verb 'step'
+  * 'in'/'into'/'on'/'onto' noun -> Enter
+  * 'off' noun -> Exit;
+
+Verb 'stop'
+  * noun -> SwitchOff;
+
+Verb 'talk' 'babble' 'chat' 'communicate' 'converse' 'gab' 'gossip' 'greet'
+  * -> Talk
+  * creature -> Talk
+  * noun -> Talk
+  * 'to'/'with' creature -> Talk
+  * 'to'/'with' noun -> Talk
+  * 'to'/'with' creature 'about' topic -> Ask
+  * 'to'/'with' noun 'about' topic -> Ask;
+
+Verb 'thank'
+  * creature -> Thank;
+
+Verb 'translate' = 'read';
+
+Verb 'use'
+  * noun -> Use;
+
+Verb 'xyzzy' 'plover' 'plugh' 'yoho'
+  * -> MagicWord;
+
+!========================================
+! Actions
+!========================================
+[ AboutSub;
+  print "This game is an adaptation of the Italian adventure 'Ken Richards: L'Ira di Anubi' by Bonaventura Di Bello. It was originally written using The Quill and Illustrator and published by Edizioni Hobby S.r.l. on the cover tape of 'Viking', no. 9, October 1987 for the ZX Spectrum and Commodore 64.^^The data was extracted from the C64 version using UnQuill, translated to English and rewritten for a modern audience with the original author's permission. The new version includes many enhancements that weren't in the original. The coding was done using Inform 6 and the PunyInform library.^^";
+  <<Credits>>;
+];
+
+[ AskAboutSub x count npc;
+  objectloop (x in location && x has animate && x ~= player)
+  {
+    count++;
+    npc = x;
+  }
+  if (count == 0)
+    "There's no one here to answer your questions.";
+  if (count == 1)
+    <<Ask npc noun>>;
+  "As there is more than one animate creature here, you'll have to specify who to ask, e.g. ASK MAN ABOUT DOG.";
+];
+
+[ CreditsSub;
+  "Original concept, game design and coding by Bonaventura Di Bello.^English translation, game redesign and coding by Garry Francis.^Play testing by Charles Moore Jr, Gianluca Girelli, Pablo Maria Martinez Merino and Robert Eggleston.^Special thanks to Gianluca Girelli for ideas and feedback during the redesign.";
+];
+
+[ DrinkSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You can't drink ", (ThatOrThose)noun, ".";;
+];
+
+[ DrinkFromSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  print_ret (string)YOU_CANT_DRINK_FROM, (ThatOrThose)noun, ".";;
+];
+
+[ DriveSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You can't drive ", (ThatOrThose)noun, ".";
+];
+
+[ ExtinguishSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You can't extinguish ", (ThatOrThose)noun, ".";
+];
+
+[ FillWithSub;
+  "You can't fill ", (the)noun, " with ", (ThatOrThose)second, ".";
+];
+
+[ FireSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You'll have to tell me what to fire at.";
+];
+
+!Delete GoSub if diagonal directions are used
+[ GoSub _prop;
+  if (selected_direction == ne_to or nw_to or se_to or sw_to)
+    "There are no diagonal directions in this game.";
+  _prop = selected_direction;
+#Iftrue RUNTIME_ERRORS > RTE_MINIMUM;
+  if (_prop == 0)
+    return _RunTimeError(ERR_INVALID_DIR_PROP);
+#Endif;
+  return GoDir(_prop);
+];
+
+[ HelpSub;
+  "Tell me what to do using simple commands starting with a verb.^^Use LOOK (or L) to refresh the location description. Identify all the objects in the description and EXAMINE (or X) each one. Read responses carefully for hints.^^Use compass directions (N, S, E, W, U and D) to move around. Draw a map as you go.^^Use GET or TAKE to take objects and DROP to drop them again. Use WEAR to wear things like clothing and REMOVE to remove anything that's currently worn. Use INVENTORY (or I) to see what you're carrying and wearing.^^Use AGAIN (or G) to repeat the last command.^^Use UNDO to undo the last command if you get killed, make a mistake or want to try something different.^^Use SAVE to save the game and RESTORE to restore it again.^^There are over 100 verbs that you can use, so if something doesn't work, try a different verb or a different way of doing things. Use HINT if you get stuck.^^For full instructions, see the game page at <https://bdb-project.itch.io/wrath-of-anubis>.";
+];
+
+[ HintSub;
+  "Examine everything you find and draw a map.";
+];
+
+[ LiftSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (noun has scenery)
+    "Don't be silly.";
+  if (noun has animate or static)
+    "You can't move ", (ThatOrThose)noun, " let alone lift ", (ItOrThem)noun, ".";
+  if (noun in location)
+    <<LookUnder noun>>;
+  "You lift ", (the)noun, " a bit higher, but nothing happens.";
+];
+
+[ LockSub k;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (noun hasnt lockable)
+  {
+    PrintMsg(MSG_LOCK_NOT_A_LOCK, 'lock');
+    rtrue;
+  }
+  if (noun has locked)
+  {
+    PrintMsg(MSG_LOCK_ALREADY_LOCKED);
+    rtrue;
+  }
+  if (noun has open)
+  {
+    PrintMsg(MSG_LOCK_CLOSE_FIRST);
+    rtrue;
+  }
+  k = RunRoutines(noun, with_key);
+  if (k == nothing)
+    "You can't see how to lock ", (ItOrThem)noun, ".";
+  if (second == nothing && k ~= nothing && k in player)
+  {
+    second = k;
+    print "(with ", (the)second, ")^";
+  }
+  if (second == nothing)
+    "You don't have the key.";
+  if (second ~= k)
+  {
+    PrintMsg(MSG_LOCK_KEY_DOESNT_FIT);
+    rtrue;
+  }
+  give noun locked;
+  run_after_routines_msg = MSG_LOCK_DEFAULT;
+  run_after_routines_arg_1 = 'lock';
+];
+
+[ LookUnderSub;
+  if (location == thedark)
+    "But it's dark.";
+  "You find nothing of interest.";
+];
+
+[ MagicWordSub;
+  "Anubis rises before you. ~Recover the medallion of Sinuhe to appease my wrath. Only then will the curse be lifted from the descendants of the pharaoh.~ With that, the apparition vanishes.^^Well, that was weird. You must have a touch of sunstroke from spending too much time in the desert.";
+];
+
+[ PrySub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (AfterRoutines())
+    rtrue;
+  if (keep_silent == 1)
+    rtrue;
+  "You can't pry ", (the)noun, ".";
+];
+
+[ ReadSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "There's nothing legible on ", (ThatOrThose)noun, ".";
+];
+
+[ ReflectSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You can't reflect ", (the)noun, ".";
+];
+
+[ SaySub i;
+  if (consult_words == 0)
+    "You have nothing to say.";
+  print "~";
+  i = consult_from;
+  print (firstConsultWord)i++;
+  while (i < consult_from + consult_words)
+    print " ", (consultWord)i++;
+  print ".~^^";
+  wn = consult_from;
+  if (consult_words == 1 && NextWord() == 'xyzzy' or 'plover' or 'plugh' or 'yoho')
+    <<MagicWord>>;
+  if (AfterRoutines())
+    rtrue;;
+  "Nothing happens.";
+];
+
+[ ScareSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You say ~BOO!~, but ", (the)noun, " is unimpressed.";
+];
+
+[ ShootSub;
+  if (noun == nothing)
+    "You point your finger in the air and say, ~Bang!~";
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You can't just go around shooting anything.";
+];
+
+[ TalkSub;
+  if (noun == nothing)
+    "You start talking to no one in particular.";
+  if (noun == player)
+    "You start talking to yourself, but it's a one-sided conversation.";
+  if (RunLife(noun, ##Talk))
+    rtrue;
+  print_ret (The)noun, " ", (IsOrAre)noun, " not very talkative.";
+];
+
+[ ThankSub;
+  if (noun == player)
+    "You start thanking yourself, then wonder what it is that you've done that's so worthy of thanking.";
+  if (RunLife(noun, ##Thank))
+    rtrue;
+  "There's no point thanking ", (the)noun, ".";
+];
+
+[ UnlockSub k;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  if (noun hasnt lockable)
+  {
+    PrintMsg(MSG_UNLOCK_NOT_A_LOCK, 'unlock');
+    rtrue;
+  }
+  if (noun hasnt locked)
+  {
+    PrintMsg(MSG_UNLOCK_ALREADY_UNLOCKED, 'unlock');
+    rtrue;
+  }
+  k = RunRoutines(noun, with_key);
+  if (k == nothing)
+    "You can't see how to unlock ", (ItOrThem)noun, ".";
+  if (second == nothing && k ~= nothing && k in player)
+  {
+    second = k;
+    print "(with ", (the)second, ")^";
+  }
+  if (second == nothing)
+    "You don't have the key.";
+  if (second ~= k)
+  {
+    PrintMsg(MSG_UNLOCK_KEY_DOESNT_FIT);
+    rtrue;
+  }
+  give noun ~locked;
+  run_after_routines_msg = MSG_UNLOCK_DEFAULT;
+  run_after_routines_arg_1 = 'unlock';
+];
+
+[ UseSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You'll have to be more explicit than that.";
+];
+
+[ WaveAtSub;
+  if (ObjectIsUntouchable(noun))
+    rtrue;
+  "You wave at ", (the)noun, ", but there's no response.";
+];
+
+End;

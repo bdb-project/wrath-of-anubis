@@ -1,0 +1,134 @@
+The Wrath of Anubis
+By Garry Francis
+For Z-code interpreters
+
+Solution by Garry Francis
+----------------------------------------
+This is a minimal solution. You'll need to EXAMINE lots of things for this solution to make sense. Some optional (but significant) commands are shown in parentheses. These can be omitted once you know what to do.
+
+Make sure you talk to the big burly man and ask him about himself to find out that his name is Achmed. Ask Achmed about everything you've learnt, as he's a mine of information.
+
+There's a desert maze near the beginning, but this is easy to map in the conventional manner by dropping objects to make each location unique. However, there's also a thirst daemon, so your first priority should be to find and drink water. Achmed can help you with general directions if you ask him about the desert, oasis or water.
+
+X TABLE (you find a chisel)
+GET CHISEL
+S
+E
+(E) (a man jumps out and blocks your progress, he's a mine of information)
+(X MAN)
+(TALK TO HIM) (he seems friendly, you aren't allowed in ruins for your safety)
+(ASK HIM ABOUT HIMSELF) (his name is Achmed)
+(ASK HIM ABOUT ACHMED, ANUBIS, CROCODILES, CUSTOMS, DESERT, EL RAJID, FESTIVAL, GHOST, GODS, LEGEND, ME, MEDALLION, NILE, OASIS, PALACE, PHARAOH, PYRAMID, RA, SIMHEL, SINUHE and synonyms)
+IN
+GET FLASHLIGHT
+(OPEN BOOK) (something falls out)
+(L) (it was a checklist)
+(X CHECKLIST) (you should read it)
+(READ IT) (you need a light source, firearm, chisel, knife and rations)
+GET PISTOL
+OUT
+W
+S
+S (here's where the desert starts)
+W
+N
+N
+N
+(X NOMAD) (you should search him for concealed weapons)
+SEARCH NOMAD (you find a canteen)
+GET CANTEEN
+(X IT) (it's closed)
+S
+S
+W
+OPEN CANTEEN
+FILL IT WITH WATER
+DRINK WATER (your thirst is now quenched)
+E
+S
+E
+E
+N
+N
+GET KNIFE
+S (there's something sticking out of the sand)
+(X SOMETHING) (it's the tip of a pyramid)
+S
+W
+W
+S
+(X CAMEL) (it's got a broken leg)
+SHOOT CAMEL WITH PISTOL
+CUT CAMEL WITH KNIFE (you cut a huge chenk of flesh from camel's rump)
+GET MEAT
+E
+E
+N, S, E or W (you fall into a hole)
+(D or JUMP) (it's too dark down there)
+LIGHT FLASHLIGHT
+D (you drop everything)
+DIG DEBRIS (you expose remains of archaeologist)
+(X BODY) (try searching him)
+SEARCH BODY (you find a lighter)
+GET ALL (lighter, chisel, flashlight, pistol, canteen, knife and meat taken)
+E
+E (you trip over something)
+STAND ON SLAB (it lowers to floor level and crack appears)
+PUT KNIFE IN CRACK
+W (the knife prevents the slab rising back again)
+N (there's now an opening here)
+E
+(X SARCOPHAGUS) (lid is sealed to sarcophagus)
+(GET STAFF) (it's too tight and you can't get your fingers around it)
+PRY STAFF WITH CHISEL (you place it on the lid)
+GET STAFF
+BREAK SEAL WITH CHISEL (you break the seal)
+[DROP CHISEL]
+PRY LID WITH STAFF (lid crashes to floor)
+(L) (the sarcophagus contains a mummy and a helmet)
+GET HELMET
+WEAR IT (to protect you from cave-in)
+W
+S
+W
+W
+W
+(GET SPADE) (you can't get to it because of the snakes, clear a path first)
+PUSH BRAZIER WITH STAFF (it falls to ground and oil spills over floor)
+LIGHT LIGHTER
+BURN OIL WITH LIGHTER (the snakes move away from the flames)
+(EXTINGUISH LIGHTER)
+[(DROP LIGHTER)]
+GET SPADE
+E
+E
+E
+N
+N
+W
+N
+(N) (you can't get past the bats)
+SHOOT BATS WITH PISTOL (plaster rains down on you, helmet protects your head)
+(N) (you can't get through the debris)
+DIG DEBRIS WITH SPADE (you clear a path)
+N
+(D) (you can't get through the debris)
+DIG DEBRIS WITH SPADE (you clear a path)
+[(DROP SPADE)]
+D
+(X BONES) (you can't get close enough to examine it properly due to crocodiles)
+THROW MEAT TO CROCODILES
+X BONES (you find a medallion)
+GET MEDALLION
+(X IT) (it's dirty)
+CLEAN IT (it's now shiny)
+U
+S
+S
+E
+N
+(X WALL) (image of priest shows line reflected off his cupped hands)
+PULL LEVER (a beam of light appears)
+REFLECT BEAM WITH MEDALLION (or LIFT/RAISE MEDALLION) (passage appears to east)
+E
+***THE END***
